@@ -25,9 +25,11 @@ header{
 nav ul{
     list-style-type: none;
     display: flex;
+    position: relative;
+    right: 5em;
 }
 nav li{
-    margin-right: 15px;
+    margin-right: 30px;
 }
 
 /*Slider*/
@@ -35,6 +37,17 @@ nav li{
     background:url('images/slider/bg1.jpg') no-repeat;
     height: 500px;
     border: 1px solid;
+}
+
+.Title{
+    position: relative;
+    left: 8em;
+    top: 10em;
+}
+.Title h1{
+    
+    width: 600px;
+    height: 80px;
 }
 
 /*Nos services*/
