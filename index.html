@@ -1,122 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>web agency</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-		  crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+/*tous le bloc*/
+#page_block{
+    background: pink;
+    border:1px solid;
+}
 
-	
-	
-</head>
-<body>
-	<div id="page_block">
-	<header>
-		
-		<!--en tete-->
-		<div id="header">
-			<div class="first_part_header">
-				<div class="logo">
-				<img src="images/logo.png" alt="logo">
-				</div>
+/*En tête*/
+header{
+    border: 1px solid;
+}
+/*Logo + Nav*/
+.first_part_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px; 
+}
 
-				<!--Nav + ancre-->
-				<div class="nav">
-				<nav>
-					<ul>
-						<li><a href="#Title">Accueil</a></li>
-						<li><a href="#Services">Services</a></li>
-						<li><a href="#Project">Portfolio</a></li>
-						<li><a href="#Contact">Contact</a></li>
-					</ul>
-				</nav>
-				</div>
-			</div>
+/*Logo déplacer un peu vers la droite*/
+.logo{
+    position: relative;
+    left: 4em;
+}
 
-			<!--TITRE-->
-			<div id="Home">
-				<!--Background image + slider-->
-				<div class="Title">
-					<h1>WEBAGENCY : L'AGENCE DE TOUS VOS PROJETS !</h1>
-					<p> Vous avez un projet Web ? La Webagency vous aide à le réaliser !</p>
-					<p class="informations"><a href="#Contact">Plus d'infos</a></p>
-				</div>
-			</div>
-		</div>
-	</header>
+/*Navigation*/
+nav ul{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    right: 5em;
+}
+nav li{
+    margin-right: 50px;
+}
 
-	<!--Première section.... Nos services-->
-	<section id="Services">
-		<div class="service_title">
-			<h1>Nos Services</h1>
-			<p>blablablablablabal</p>
-		</div>
-		
-		<!--image-->
-		<img src="images/main-feature.png" alt="ordi">
-		
-		<!--les services-->
-		<div class="different_services">
-			<!--image icone UX-->
-			<h2>UX design</h2>
-			<p>blablablabla</p>
-			
-			<!--Image icone UI-->
-			<h2>UI design</h2>
-			<p>blablabla</p>
-			
-			<!--image icone SEO-->
-			<h2>SEO</h2>
-			<p>blablablanalabla</p>
-		</div>
-	</section>
-	
-	<!--second section...Nos projets-->
-	<section id="Project">
-		<div class="project_title">
-			<h2>Nos projets</h2>
-			<p>blablablablabla</p>
-		</div>
-			 
-			 <div class="tab">
-				<ul>
-					<li>All work</li>
-					<li>Creative</li>
-					<li>Corporate</li>
-					<li>Portofolio</li>
-				</ul>
-			 </div>
-			 
-			 <div class="image_project">
-				<img src="images/portfolio/01.jpg" alt="Projet 1 - visage à lunette sans visage">
-				<img src="images/portfolio/02.jpg" alt="Projet 2 - humain déguisé en lapin">
-				<img src="images/portfolio/03.jpg" alt="Projet 3 - Logo de Pompadour">
-				<img src="images/portfolio/04.jpg" alt="Projet 4 - maquette">
-				<img src="images/portfolio/05.jpg" alt="Projet 5 - sac de shopping">
-				<img src="images/portfolio/06.jpg" alt="Projet 6 - dessin ">
-				<img src="images/portfolio/07.jpg" alt="Projet 7 - fusée">
-				<img src="images/portfolio/08.jpg" alt="Projet 8 - Outils bureautique">
-			 </div>
-	</section>
-	
-	<!--Pied de pages-->
-	<footer>
-		<!--MAPS-->
-		<div id="Contact">
-		<form>
-			<p>
-				<input type="text" name="Name" id="nom" placeholder="Name"/><br>
-				<input type="email" name="Email" id="Email" placeholder="Email"/><br>
-				<input type="text" name="text" id="subject" placeholder="Subject"/><br>
-				<textarea
-					  name="commentaire" name="commentaire" placeholder="Commentaire">
-				</textarea>
-			</p>
-		</form>
-		</div>
-	</footer>
-	</div>
-</body>
-</html>
+/*Slider*/
+#Home{
+    background:url('images/slider/bg1.jpg') no-repeat;
+    height: 500px;
+    border: 1px solid;
+}
+
+.Title{
+    position: relative;
+    left: 8em;
+    top: 10em;
+}
+.Title h1{
+    
+    width: 600px;
+    height: 80px;
+}
+
+/*Nos services*/
+#Services{
+    background: green;
+    border: 1px solid;
+}
+
+
+/*Nos projet*/
+#Project{
+    background: blue;
+    border: 1px solid;
+}
+
+
+/*Contact*/
+#Contact{
+    background: yellow;
+    border: 1px solid;
+}
