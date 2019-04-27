@@ -1,0 +1,58 @@
+/*tous le bloc*/
+#page_block{
+    background: pink;
+    border:1px solid;
+}
+
+/*En tête*/
+header{
+    border: 1px solid;
+}
+/*Logo + Nav*/
+.first_part_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; 
+}
+
+/*Logo déplacer un peu vers la droite*/
+.logo{
+    position: relative;
+    left: 4em;
+}
+
+/*Navigation*/
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    margin-right: 15px;
+}
+
+/*Slider*/
+#Home{
+    background:url('images/slider/bg1.jpg') no-repeat;
+    height: 500px;
+    border: 1px solid;
+}
+
+/*Nos services*/
+#Services{
+    background: green;
+    border: 1px solid;
+}
+
+
+/*Nos projet*/
+#Project{
+    background: blue;
+    border: 1px solid;
+}
+
+
+/*Contact*/
+#Contact{
+    background: yellow;
+    border: 1px solid;
+}
