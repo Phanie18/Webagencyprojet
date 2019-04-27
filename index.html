@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>web agency</title>
+	<title>web Agency</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 		  crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	
 	
 </head>
 <body>
-	<div id="bloc-page">
+	<div id="page_block">
 	<header>
 		
 		<!--en tete-->
@@ -22,18 +24,18 @@
 			<div class="nav">
 			<nav>
 				<ul>
-					<li>Accueil</li>
+					<li><a href="Home">Accueil</a></li>
 					<li><a href="#Services">Services</a></li>
-					<li><a hred="#Projets">Portfolio</a></li>
-					<li><a href="#Contatc">Contact</a></li>
+					<li><a href="#Project">Portfolio</a></li>
+					<li><a href="#Contact">Contact</a></li>
 				</ul>
 			</nav>
 			</div>
 
 			<!--TITRE-->
-			<div id="header_2">
+			<div id="Home">
 				<!--Background image + slider-->
-				<div class="Titre">
+				<div class="Title">
 					<h1>TITRE</h1>
 					<p> blablablablabla</p>
 				</div>
@@ -43,7 +45,7 @@
 
 	<!--Première section.... Nos services-->
 	<section id="Services">
-		<div class="titre_services">
+		<div class="service_title">
 			<h1>Nos Services</h1>
 			<p>blablablablablabal</p>
 		</div>
@@ -52,8 +54,7 @@
 		<img src="images/main-feature.png" alt="ordi">
 		
 		<!--les services-->
-		<i class="fab fa-500px"></i>
-		<div class=services-num>
+		<div class="different_services">
 			<!--image icone UX-->
 			<h2>UX design</h2>
 			<p>blablablabla</p>
@@ -69,13 +70,13 @@
 	</section>
 	
 	<!--second section...Nos projets-->
-	<section id="Projets">
-		<div class="titre_projet">
+	<section id="Project">
+		<div class="project_title">
 			<h2>Nos projets</h2>
 			<p>blablablablabla</p>
 		</div>
 			 
-			 <div class="onglet">
+			 <div class="tab">
 				<ul>
 					<li>All work</li>
 					<li>Creative</li>
@@ -84,7 +85,7 @@
 				</ul>
 			 </div>
 			 
-			 <div class="Portfolio">
+			 <div class="image_project">
 				<img src="images/portfolio/01.jpg" alt="Projet 1">
 				<img src="images/portfolio/02.jpg" alt="Projet 2">
 				<img src="images/portfolio/03.jpg" alt="Projet 3">
@@ -102,9 +103,9 @@
 		<div id="Contact">
 		<form>
 			<p>
-				<input type="text" name="Name" id="nom" placeholder="Name"/>
-				<input type="email" name="Email" id="Email" placeholder="Email"/>
-				<input type="text" name="text" id="subject" placeholder="Subject"/>
+				<input type="text" name="Name" id="nom" placeholder="Name"/><br>
+				<input type="email" name="Email" id="Email" placeholder="Email"/><br>
+				<input type="text" name="text" id="subject" placeholder="Subject"/><br>
 				<textarea
 					  name="commentaire" name="commentaire" placeholder="Commentaire">
 				</textarea>
