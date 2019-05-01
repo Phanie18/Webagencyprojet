@@ -6,13 +6,13 @@
 #header{
     background-color: pink;
     margin-bottom: 60px;
+    height: 500px;
 }
 
 /*Logo + Nav*/
 .first_part_header{
     display: flex;
     justify-content: space-between;
-    align-content: center;
 }
 
 /*Navigation*/
@@ -25,33 +25,33 @@ nav li{
 }
 
 /*Slider*/
-#Home{
+#home{
     background:url('images/slider/bg1.jpg') no-repeat;
+    width: 100%;
+    z-index: 10;
+    height: auto;
     background-size: cover;
-    height:450px;
 }
 
-.Title {
+.title {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
-    margin-top: 3%;
-    position: relative;
-    top:25%;
-    left: 8%;
 }
 
-.Title h1{
-    width: 40.5%;
+.title h1{
+    width: 75%;
     margin-bottom: 0px;
 }
 
-.Title p{
+.title p{
+    color: blue;
     width: 65%;
     margin-bottom: 0px;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:320px){
+
 /*nav*/
     nav{
         width: auto;
@@ -74,7 +74,13 @@ nav li{
         border-bottom: 0;
         }
 
-    #Home{
+    #home{
         height: auto;
+        width: auto;
+    }
+    
+    .title h1{
+        position: absolute;
+        z-index:10;
     }
 }
