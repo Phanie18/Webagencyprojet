@@ -12,6 +12,7 @@
 .first_part_header{
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 /*Navigation*/
@@ -26,7 +27,6 @@ nav li{
 /*Slider*/
 #Home{
     background:url('images/slider/bg1.jpg') no-repeat;
-    width: 100%;
     background-size: cover;
     height:450px;
 }
@@ -35,16 +35,18 @@ nav li{
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
+    margin-top: 3%;
+    position: relative;
+    top:25%;
+    left: 8%;
 }
 
 .Title h1{
-    color: red;
-    width: 75%;
+    width: 40.5%;
     margin-bottom: 0px;
 }
 
 .Title p{
-    color: blue;
     width: 65%;
     margin-bottom: 0px;
 }
