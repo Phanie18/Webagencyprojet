@@ -1,33 +1,23 @@
-/*tous le bloc*/
 #page_block{
-    background: pink;
-    border:1px solid;
+    margin:  0px;
+    padding: 0px;
+    
+}
+#header{
+    background-color: pink;
+    margin-bottom: 60px;
 }
 
-/*En tête*/
-header{
-    border: 1px solid;
-    height: 700px;
-}
 /*Logo + Nav*/
 .first_part_header{
     display: flex;
     justify-content: space-between;
-    margin: 10px; 
-}
-
-/*Logo déplacer un peu vers la droite*/
-.logo{
-    position: relative;
-    left: 4em;
 }
 
 /*Navigation*/
 nav ul{
     list-style-type: none;
     display: flex;
-    position: relative;
-    right: 5em;
 }
 nav li{
     margin-right: 50px;
@@ -36,81 +26,12 @@ nav li{
 /*Slider*/
 #Home{
     background:url('images/slider/bg1.jpg') no-repeat;
-    background-size: auto;
-    height: 500px;
-    border: 1px solid;
-    position: relative;
-    top:1em;
+    background-size: cover;
+    height:450px;
 }
 
-.Title{
-    position: relative;
-    left: 8em;
-    top: 10em;
+.Title {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
 }
-.Title h1{
-    
-    width: 600px;
-    height: 80px;
-}
-
-/*Nos services*/
-#Services{
-    background: green;
-    border: 1px solid;
-}
-
-
-/*Nos projet*/
-#Project{
-    background: blue;
-    border: 1px solid;
-}
-
-
-/*Contact*/
-#Contact{
-    background: yellow;
-    border: 1px solid;
-}
-
-@media only screen and (max-width:320px){
-    #page_block{
-        width: auto;
-    }
-    
-    nav{
-        width: auto;
-        text-align: left;
-    }
-    
-    nav ul{
-        flex-direction: column;
-        position: relative;
-        left: 2em;
-    }
-    
-    nav li{
-        padding-left: 4px;
-    }
-    
-    nav a{
-        font-size: 1.1em;
-    }
-    
-    nav a:hover{
-        border-bottom: 0;
-    }
-    
-    .logo{
-        width: auto;
-        position: relative;
-        right: 3em;
-        top: 3em;
-    }
-    header img{
-        max-width: 100%;
-        height:auto;
-    }
-}
-
