@@ -26,12 +26,53 @@ nav li{
 /*Slider*/
 #Home{
     background:url('images/slider/bg1.jpg') no-repeat;
+    width: 100%;
     background-size: cover;
     height:450px;
 }
 
 .Title {
-    width: 500px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.Title h1{
+    color: red;
+    width: 75%;
+    margin-bottom: 0px;
+}
+
+.Title p{
+    color: blue;
+    width: 65%;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:400px){
+/*nav*/
+    nav{
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul{
+        flex-direction: column;
+    }
+    
+    nav li{
+        padding-left: 4px;
+    }
+    
+    nav a{
+        font-size: 1.1em;
+    }
+    
+    nav a:hover{
+        border-bottom: 0;
+        }
+
+    #Home{
+        height: auto;
+    }
 }
