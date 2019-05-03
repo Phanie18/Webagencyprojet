@@ -1,18 +1,20 @@
 #page_block{
     margin:  0px;
     padding: 0px;
-    
 }
+
 #header{
+    justify-content: space-between;
     background-color: pink;
     margin-bottom: 60px;
-    height: 500px;
+    height: 550px;
 }
 
 /*Logo + Nav*/
 .first_part_header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 /*Navigation*/
@@ -20,6 +22,7 @@ nav ul{
     list-style-type: none;
     display: flex;
 }
+
 nav li{
     margin-right: 50px;
 }
@@ -28,9 +31,10 @@ nav li{
 #home{
     background:url('images/slider/bg1.jpg') no-repeat;
     width: 100%;
+    height: 450px;
     z-index: 10;
-    height: auto;
-    background-size: cover;
+    background-size: cover
+    
 }
 
 .title {
@@ -40,18 +44,54 @@ nav li{
 }
 
 .title h1{
-    width: 75%;
+    width: 40%;
     margin-bottom: 0px;
+    position: relative;
+    left: 10%;
 }
 
 .title p{
-    color: blue;
     width: 65%;
     margin-bottom: 0px;
+    position: relative;
+    left: 10%;
+    top:25%;
+}
+#services{
+    height:450px;
 }
 
-@media screen and (max-width:320px){
+.service_title{
+    text-align: center;
+    font-size: 1.5em;
+}
 
+.benefit{
+    display: flex;
+   justify-content: space-around;
+   height: 250px;
+}
+
+.different_services{
+    position: relative;
+    right: 20%;
+    }
+
+
+
+
+    
+    
+  @media screen and (max-width:320px){
+    .logo img{
+        width: 200px;
+    }
+    
+    header{
+        width: auto;
+        height: 300px;
+    }
+    
 /*nav*/
     nav{
         width: auto;
@@ -63,11 +103,11 @@ nav li{
     }
     
     nav li{
-        padding-left: 4px;
+        padding-right: 10px;
     }
     
     nav a{
-        font-size: 1.1em;
+        font-size:10px;
     }
     
     nav a:hover{
@@ -75,12 +115,48 @@ nav li{
         }
 
     #home{
-        height: auto;
+        height: 90px;
+        background-size: cover;
         width: auto;
+        margin-bottom: 25px;
     }
     
-    .title h1{
-        position: absolute;
-        z-index:10;
+    .title{
+        position: relative;
+        bottom: 45px;
+        margin-bottom: 35px;
     }
-}
+    
+  .title h1{
+        font-size: 8px;
+        font-style: normal;
+        width: 35%;
+        text-align:center;
+        position: relative;
+        left: 35%;
+    }
+    
+    .title p{
+        font-size: 5px;
+        font-style:normal;
+        text-align:center;
+        position: relative;
+        left:20%;
+    }
+    
+    .benefit{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    .picture img{
+        justify-content: center;
+        position: relative;
+        top:50%;
+        width: 90%;
+    }
+    .different_services{
+        justify-content: center;
+    }
+  }
