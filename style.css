@@ -1,183 +1,93 @@
 #page_block{
-    margin:  0px;
-    padding: 0px;
-}
-
-#header{
-    justify-content: space-between;
     background-color: pink;
-    margin-bottom: 60px;
-    height: 550px;
 }
 
-/*Logo + Nav*/
+/*Header*/
+#header{
+    background-color: red;
+}
+
 .first_part_header{
+    background-color:#296882;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    justify-content: space-around;
+    height: 90px;
+    align-content: center;
 }
 
-/*Navigation*/
+/*Navigateur*/
+.nav{
+    background-color: #50C8FA;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
 }
 
 nav li{
-    margin-right: 50px;
+    margin-right: 15px;
+    align-content: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.logo{
+    background-color: #590C90;
 }
 
 /*Slider*/
 #home{
-    background:url('images/slider/bg1.jpg') no-repeat;
-    width: 100%;
-    height: 450px;
-    z-index: 10;
-    background-size: cover
-    
-}
-
-.title {
+    background-color: #A21262;
+    background: url(images/slider/bg1.jpg);
+    height: 549px;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 .title h1{
-    width: 40%;
-    margin-bottom: 0px;
-    position: relative;
-    left: 10%;
+    width: 70%;
 }
 
-.title p{
-    width: 65%;
-    margin-bottom: 0px;
-    position: relative;
-    left: 10%;
-    top:25%;
-}
-#services{
-    height:450px;
+.title h1,.title p{
+    color: red;
 }
 
-.service_title{
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.benefit{
-    display: flex;
-   justify-content: space-around;
-   height: 250px;
-}
-
-.different_services{
-    position: relative;
-    right: 20%;
-    }
 
 
 
 
-    
-    
-  @media screen and (max-width:320px){
-    /*Header*/
-    .logo img{
-        width: 200px;
-    }
-    
+
+
+
+@media screen and (max-width:320px){
     header{
         width: auto;
         height: 200px;
         background-color: red;
+        justify-content: center;
     }
-    
-/*nav*/
-    nav{
-        width: auto;
-        text-align: left;
+
+    .logo img{
+        width: 90%;
     }
-    
+
+    .title h1,.title p{
+    font-size: 0.8em;
+    }
+
     nav ul{
         flex-direction: column;
     }
-    
-    nav li{
-        padding-right: 10px;
-    }
-    
-    nav a{
-        font-size:10px;
-    }
-    
-    nav a:hover{
-        border-bottom: 0;
-        }
 
     #home{
-        height: 90px;
+        width: auto;
+        height: 190px;
         background-size: cover;
-        width: auto;
-        margin-bottom: 25px;
+        background-position: center;
     }
-    
-    .title{
-        position: relative;
-        bottom: 45px;
-        margin-bottom: 35px;
-    }
-    
-  .title h1{
-        font-size: 8px;
-        font-style: normal;
-        width: 35%;
-        text-align:center;
-        position: relative;
-        left: 35%;
-    }
-    
-    .title p{
-        font-size: 5px;
-        font-style:normal;
-        text-align:center;
-        position: relative;
-        left:20%;
-    }
-    
-    /*Section Services*/
-    .benefit{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
-    
-    #services{
-        width: auto;
-    }
-    
-    .service_title{
-        font-size: 0.8em;
-    }
-    
-    .service_title h1{
-        margin-top:5%;
-        margin-bottom: 0px;
-    }
-    
-    .picture img{
-        justify-content: center;
-        position: relative;
-        left:10%;
-        top:70%;
-        width: 80%;
-    }
-    .different_services{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        
-    }
-  }
+
+}
