@@ -145,43 +145,21 @@ nav a{
     align-items: flex-end;
 }
 
-
-#contact h2{
+.address{
     margin-right: 390px;
-    margin-bottom: 5px;
+    background-color: azure;
 }
 
-#contact p{
-    margin-right: 390px;
+.form{
+    margin-right: 200px;
+    width: 400px;
+    background-color: coral;
 }
 
-
-#contact form{
-    margin-right: 390px;
-
+#name, #email, #subject, #commentaire{
+    width: 300px;
+    margin-bottom: 10px;
 }
-
-#nom{
-    width: 390px;
-    margin-bottom: 15px;
-}
-
-#email{
-    width: 390px;
-    margin-bottom: 15px;
-}
-
-#subject{
-    width: 390px;
-    margin-bottom: 15px;
-}
-
-#commentaire{
-    width: 390px;
-    height: 150px;
-}
-
-
 
 
 
@@ -263,10 +241,16 @@ nav a{
     justify-content: center;
 }
 
+
 /*SECTION CONTACT*/
-footer{
+
+#contact{
     background-color: #693fc1;
-    width: 100px;
+    display: block;
+    width: 200px;
 }
 
+.addresse{
+    text-align: center;
+}
 }
