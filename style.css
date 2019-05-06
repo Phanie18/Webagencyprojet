@@ -2,7 +2,7 @@
     background-color: pink;
 }
 
-/*Header*/
+/*HEADER*/
 #header{
     background-color: red;
 }
@@ -15,7 +15,7 @@
     align-content: center;
 }
 
-/*Navigateur*/
+/*NAVIGATEUR*/
 .nav{
     background-color: #50C8FA;
 }
@@ -23,11 +23,11 @@
 nav ul{
     list-style-type: none;
     display: flex;
+    align-content: center;
 }
 
 nav li{
     margin-right: 15px;
-    align-content: center;
 }
 
 nav a{
@@ -38,23 +38,156 @@ nav a{
     background-color: #590C90;
 }
 
-/*Slider*/
+.logo img{
+    width: 250px;
+}
+
+/*SlIDER*/
 #home{
     background-color: #A21262;
     background: url(images/slider/bg1.jpg);
-    height: 549px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
 }
 
 .title h1{
     width: 70%;
+    text-align: center;
 }
 
 .title h1,.title p{
     color: red;
 }
+
+/*SECTION SERVICES*/
+#services{
+    height:450px;
+}
+
+.service_title{
+    font-size: 1.5em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service_title h1{
+    margin-bottom: 5px;
+}
+
+.service_title p{
+    margin-top: 5px;
+}
+
+/*DIFFRERENT SERVICES*/
+
+.benefit{
+    display: flex;
+   justify-content: space-around;
+   height: 250px;
+}
+
+/*SECTION PROJECT*/
+#project{
+    background-color: #ad2e7c;
+}
+
+.project_title{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.project_title h2{
+    margin-bottom: 5px;
+}
+
+.project_title p{
+    margin-top: 3px;
+}
+
+.tab ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.tab li{
+    margin-right: 15px;
+}
+
+.tab a{
+    text-decoration: none;
+}
+
+.images_project img{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project_images{
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*SECTION CONTACT*/
+
+#contact{
+    background-color: #693fc1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+#contact h2{
+    margin-right: 390px;
+    margin-bottom: 5px;
+}
+
+#contact p{
+    margin-right: 390px;
+}
+
+
+#contact form{
+    margin-right: 390px;
+
+}
+
+#nom{
+    width: 390px;
+    margin-bottom: 15px;
+}
+
+#email{
+    width: 390px;
+    margin-bottom: 15px;
+}
+
+#subject{
+    width: 390px;
+    margin-bottom: 15px;
+}
+
+#commentaire{
+    width: 390px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -85,9 +218,55 @@ nav a{
 
     #home{
         width: auto;
-        height: 190px;
+        height: 130px;
         background-size: cover;
         background-position: center;
     }
+
+    .title{
+        margin-top: -150px;
+
+    }
+
+    .title h1, .title p{
+        margin: 0px;
+        text-align: center;
+    }
+
+    /*SECTION SERVICES*/
+    .benefit{
+    display: block;
+    text-align: center;
+}
+
+    .different_services h2{
+        margin-bottom: 3px;
+    }
+
+    .different_services p{
+        margin-top: 2px;
+    }
+
+    .picture img{
+        width: 150px;
+    }
+
+/*SECTION PROJECT*/
+
+.project_images{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.tab ul{
+    width: 30%;
+    justify-content: center;
+}
+
+/*SECTION CONTACT*/
+footer{
+    background-color: #693fc1;
+    width: 100px;
+}
 
 }
