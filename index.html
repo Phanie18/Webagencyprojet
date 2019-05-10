@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 		  crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type ="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="navigation.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -81,10 +82,10 @@
 				 
 			<div class="tab">
 				<ul>
-					<li>All work</li>
-					<li>Creative</li>
-					<li>Corporate</li>
-					<li>Portofolio</li>
+					<li><a href="#tab">All work</a></li>
+					<li><a href="#tab">Creative</a></li>
+					<li><a href="#tab">Corporate</a></li>
+					<li><a href="#tab">Portofolio</a></li>
 				</ul>
 			 </div>
 				 
@@ -102,24 +103,26 @@
 		
 		<!--Pied de pages-->
 		<footer>
-			<!--MAPS-->
 			<div id="contact">
-				<div class="address">
-					<h2>Contact Info</h2>
-					<p> WebAgency SAS<br>25 Rue d'Hauteville 75010 Paris <br>Tel : 01.02.03.04.05</p>
-				</div>
+				<!--MAPS-->
+				<dv class="all">
+					<div class="address">
+						<h2>Contact Info</h2>
+						<p> WebAgency SAS<br>25 Rue d'Hauteville 75010 Paris <br>Tel : 01.02.03.04.05</p>
+					</div>
 
-				<div class="form">
-					<form>
-						<p>
-							<input type="text" name="Name" id="name"placeholder="Name"/><br>
-							<input type="email" name="Email" id="email" placeholder="Email"/><br>
-							<input type="text" name="text" id="subject" placeholder="Subject"/><br>
-							<textarea name="commentaire" name="commentaire" id ="commentaire"placeholder="Commentaire"></textarea><br>
-							<input type="submit" value="Send Message">
-						</p>
-					</form>
-				</div>
+					<div class="form">
+						<form>
+							<p>
+								<input type="text" name="Name" id="name"placeholder="Name"/><br>
+								<input type="email" name="Email" id="email" placeholder="Email"/><br>
+								<input type="text" name="text" id="subject" placeholder="Subject"/><br>
+								<textarea name="commentaire" name="commentaire" id ="commentaire"placeholder="Commentaire"></textarea><br>
+								<input type="submit" id="send" value="Send Message">
+							</p>
+						</form>
+					</div>
+				</dv>
 			</div>
 		</footer>
 	</div>
