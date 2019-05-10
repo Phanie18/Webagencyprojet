@@ -16,6 +16,7 @@
 }
 
 /*NAVIGATEUR*/
+
 .nav{
     background-color: #50C8FA;
 }
@@ -141,36 +142,49 @@ nav a{
 #contact{
     background-color: #693fc1;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: flex-end;
+    height: 550px;
+}
+
+.all{
+    background-color: #c61d6f;
+    width: 330px;
+    margin-right: 250px;
+    padding-left: 25px;
 }
 
 .address{
-    margin-right: 390px;
     background-color: azure;
 }
 
 .form{
     margin-right: 200px;
-    width: 400px;
+    width: 330px;
+    height: 345px;
     background-color: coral;
 }
 
-#name, #email, #subject, #commentaire{
+#name, #email, #subject{
     width: 300px;
     margin-bottom: 10px;
+    height: 25px;
+    border-radius: 5px / 5px;
+    font-size: 0.8em;
 }
 
+ #commentaire{
+    width: 300px;
+    margin-bottom: 10px;
+    height: 150px;
+    border-radius: 5px / 5px;
+    font-size: 0.9em;
+ }
 
-
-
-
-
-
-
-
-
-
+#send{
+    width: 100px;
+    height: 300px;
+    font-size: 1em;
+}
 
 
 
@@ -203,7 +217,6 @@ nav a{
 
     .title{
         margin-top: -150px;
-
     }
 
     .title h1, .title p{
@@ -246,11 +259,38 @@ nav a{
 
 #contact{
     background-color: #693fc1;
-    display: block;
-    width: 200px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.addresse{
-    text-align: center;
+.all{
+    background-color: #c61d6f;
 }
+
+.address{
+    background-color: azure;
+}
+
+.form{
+    background-color: coral;
+}
+
+#name, #email, #subject{
+    border-radius: 5px / 5px;
+    font-size: 0.8em;
+    width: 250px;
+}
+
+ #commentaire{
+    border-radius: 5px / 5px;
+    font-size: 0.9em;
+    width: 250px;
+ }
+
+#send{
+    font-size: 1em;
+    height: 50px;
+}
+
 }
