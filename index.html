@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>web agency</title>
+	<title>Web Agency</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 		  crossorigin="anonymous">
 	<link rel="stylesheet" type ="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="navigation.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -16,23 +15,18 @@
 		<header>
 			<!--en tete-->
 			<div id="header">
-				<div class="first_part_header">
-					<div class="logo">
-						<img src="images/logo.png" alt="logo">
-					</div>
-	
-					<!--Nav + ancre-->
-					<div class="nav">
-						<nav>
-							<ul>
-								<li><a href="#title">Accueil</a></li>
-								<li><a href="#services">Services</a></li>
-								<li><a href="#project">Portfolio</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
+				<!--Nav + ancre-->
+				<div class="menu">
+		            <div class="logo"><img src="images/logo.png"></div>
+		            <input class="burger" type="checkbox">
+		            <nav>
+		                <a href="#home"><i class="material-icons"></i>Accueil</a>
+		        		<a href="#services"><i class="material-icons"></i>Services</a>
+		                <a href="#project"><i class="material-icons"></i>Portfolio</a>
+		                <a href="#contact"><i class="material-icons"></i>Contact</a>
+		            </nav>
+		        </div>
+
 
 				<!--TITRE-->
 				<div id="home">
@@ -48,30 +42,39 @@
 
 		<section id="services">
 			<div class="service_title">
-				<h1>Nos Services</h1>
+				<h2>Nos Services</h2>
 				<p>blablablablablabal</p>
 			</div>
+
+			<div class="space">
+					<div class="space_bar">d</div>
+					<div class="round">c</div>
+					<div class="space_bar">d</div>
+				</div>
+
 		
 			<div class="benefit">
 				<!--image-->
-				<div class="picture"><img src="images/main-feature.png" alt="ordi"></div>
+				<div class="picture"><img src="images/main-feature.png" alt="ordinateur"></div>
 				
 				<!--les services-->
 				<div class="different_services">
 					<!--image icone UX-->
-					<h2>UX design</h2>
+					<h3>UX design</h3>
 					<p>blablablabla</p>
 					
 					<!--Image icone UI-->
-					<h2>UI design</h2>
+					<h3>UI design</h3>
 					<p>blablabla</p>
 					
 					<!--image icone SEO-->
-					<h2>SEO</h2>
+					<h3>SEO</h3>
 					<p>blablablanalabla</p>
 				</div>
 			</div>
 		</section>
+
+
 
 		<!--SECTION PROJECT-->
 		<section id="project">
@@ -79,6 +82,12 @@
 				<h2>Nos projets</h2>
 				<p>blablablablabla</p>
 			</div>
+
+			<div class="space">
+					<div class="space_bar">d</div>
+					<div class="round">c</div>
+					<div class="space_bar">d</div>
+				</div>
 				 
 			<div class="tab">
 				<ul>
@@ -90,22 +99,46 @@
 			 </div>
 				 
 			 <div class="image_project">
-				<img class="project_images" src="images/portfolio/01.jpg" alt="Projet 1 - visage à lunette sans visage">
-				<img class="project_images" src="images/portfolio/02.jpg" alt="Projet 2 - humain déguisé en lapin">
-				<img class="project_images" src="images/portfolio/03.jpg" alt="Projet 3 - Logo de Pompadour">
-				<img class="project_images" src="images/portfolio/04.jpg" alt="Projet 4 - maquette">
-				<img class="project_images" src="images/portfolio/05.jpg" alt="Projet 5 - sac de shopping">
-				<img class="project_images" src="images/portfolio/06.jpg" alt="Projet 6 - dessin ">
-				<img class="project_images" src="images/portfolio/07.jpg" alt="Projet 7 - fusée">
-				<img class="project_images" src="images/portfolio/08.jpg" alt="Projet 8 - Outils bureautique">
+			 	<figure>
+					<img class="project_images" src="images/portfolio/01.jpg" alt="">
+					<figcaption>Portfolio 1  - Website 1</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/02.jpg" alt="">
+					<figcaption>Portfolio 2 - Website 2</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/03.jpg" alt="">
+					<figcaption>Portfolio 3 - Website 3</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/04.jpg" alt="">
+					<figcaption>Portfolio 4 - Website 4</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/05.jpg" alt="">
+					<figcaption>Portfolio 5 - Website 5</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/06.jpg" alt="">
+					<figcaption>Portfolio 6 - Website 6</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/07.jpg" alt="">
+					<figcaption>Portfolio 7 - Website 7</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/08.jpg" alt="">
+					<figcaption>Portfolio 8 - Website 8</figcaption>
+				</figure>
 			 </div>
 		</section>
-		
+
 		<!--Pied de pages-->
 		<footer>
 			<div id="contact">
 				<!--MAPS-->
-				<dv class="all">
+				<div class="all">
 					<div class="address">
 						<h2>Contact Info</h2>
 						<p> WebAgency SAS<br>25 Rue d'Hauteville 75010 Paris <br>Tel : 01.02.03.04.05</p>
@@ -122,7 +155,7 @@
 							</p>
 						</form>
 					</div>
-				</dv>
+				</div>
 			</div>
 		</footer>
 	</div>
