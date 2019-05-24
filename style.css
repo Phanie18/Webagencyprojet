@@ -1,452 +1,263 @@
-#page_block{
-    background-color: pink;
-}
-
-#header{
-    background-color: red;
-
-}
-.menu{
-  background-color: green;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90px;
-}
-
-/*NAV + SLIDER*/
-.burger{
-  display: none;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav ul{
-  list-style-type: none;
-}
-
-nav a{
-  text-decoration: none;
-}
-nav i {
-  margin-right: 30px;
-}
-
-#home{
-    background:url(images/slider/bg1.jpg);
-    background-position: center;
-    height: 550px;
-    display: flex;
-    align-items: center;
-}
-
-.title h1{
-  font-weight: bold;
-  width: 70%;
-}
-
-.title{
-  margin-left: 80px;
-}
-
-.informations{
-  background-color: #5badd3;
-  color: #ffffff;
-  width: 90px;
-  height: 30px;
-  border: 1px solid #5badd3;
-  border-radius: 3px / 3px;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-}
-.informations a{
-  text-decoration: none;
-}
-
-/*SERVICES*/
-
-#services{
-  height: 450px;
-}
-
-.services_title {
-  font-size: 1.5em;
-}
-
-#services{
-  background-color: yellow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.service_title h2{
-  margin-bottom: 5px;
-  font-size: 35px;
-}
-
-.service_title p{
-  margin-top: 10px;
-  margin-left: 25px;
-}
-
-.benefit{
-  display: flex;
-  justify-content: space-around;
-}
-
-.picture img{
-  margin-left: -330px;
-}
-
-.different_services{
-  margin-left: 190px;
-  margin-top: 35px;
-}
-
-#project{
-  background-color: red;
-}
-
-.project_title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/*SEPARATEUR*/
-.space{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  
-}
-
-.space_bar{
-  background-color: #ededed;
-  width: 120px;
-  height:0.6px;
-
-}
-
-.round{
-  background-color: #5badd3;
-  width: 15px;
-  height: 15px;
-  border-radius: 50px / 50px;
-  border: solid 6px #ffffff;
-}
-
-/*TAB*/
-.tab{
-  background-color: orange;
-  display: flex;
-  justify-content: center;
-}
-
-.tab ul{
-  display: flex;
-  list-style-type: none;
-}
-
-.tab a{
-  text-decoration: none;
-}
-.tab li {
-  margin-right: 30px;
-}
-
-/*LEGENDE*/
-
-.image_project{
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-figcaption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(24,24,24,0.6);
-  color: white;
-  height: 50px;
-  margin-top: -75px;
-
-}
-
-
-.project_images{
-    width: 250px;
-    height: 175px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-}
-
-/*SECTION CONTACT*/
-
-#contact{
-    background-color: #693fc1;
-    display: flex;
-    justify-content: flex-end;
-    height: 550px;
-}
-
-.all{
-    background-color: #c61d6f;
-    width: 330px;
-    margin-right: 250px;
-    padding-left: 25px;
-}
-
-.address{
-    background-color: azure;
-}
-
-.form{
-    margin-right: 200px;
-    width: 330px;
-    height: 345px;
-    background-color: coral;
-}
-
-#name, #email, #subject{
-    width: 300px;
-    margin-bottom: 10px;
-    height: 25px;
-    border-radius: 5px / 5px;
-    font-size: 0.8em;
-}
-
- #commentaire{
-    width: 300px;
-    margin-bottom: 10px;
-    height: 150px;
-    border-radius: 5px / 5px;
-    font-size: 0.9em;
- }
-
-#send{
-    width: 100px;
-    height: 300px;
-    font-size: 1em;
-}
-
-
-@media screen and (max-width: 320px){
-
-/*NAVIGATION*/
-body
-{
-  background:#fff;
-  margin:0;
-  padding:0;
-}
-
-nav a
-{
-  color:#fff;
-  text-decoration:none;
-}
-
-.material-icons
-{
-  font-size:24px;
-  margin-right:12px;
-  vertical-align:text-bottom;
-}
-
-.menu
-{
-  display: block;
-  background:#5badd3;
-  color:#fff;
-  height:50px;
-  position:relative;
-
-}
-
-.menu .title
-{
-  font-size:30px;
-  font-weight:bold;
-  line-height:50px;
-  padding:0 20px;
-  text-transform:uppercase;
-}
-
-.menu nav
-{
-  background:inherit;
-  font-size:20px;
-  font-weight:bold;
-  height:0;
-  overflow:hidden;
-  text-transform:uppercase;
-  transition:height .2s;
-}
-
-.menu nav > *
-{
-  display:block;
-  letter-spacing:1px;
-  line-height:2.5;
-  padding:0 20px;
-  width:100%;
-}
-
-.menu nav input
-{
-  background:rgba(0,0,0,.2);
-  border:none;
-  color:#fff;
-}
-
-.menu .burger
-{
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  color:inherit;
-  cursor:pointer;
-  font-size:30px;
-  line-height:50px;
-  margin:0;
-  outline:0;
-  padding:0;
-  position:absolute;
-  text-align:center;
-  top:0;
-  right:10px;
-  width:50px;
-}
-
-.menu .burger:before
-{
-  content:'menu';
-}
-
-.menu .burger:checked:before
-{
-  content:'close';
-}
-
-.menu .burger:checked + nav
-{
-  height:calc(100vh - 50px);
-}
-
-/*HEADER*/
-
-.menu{
-  height: 50px;
-}
-
-.logo img{
-  width: 180px;
-}
-
-#home{
-  background-size: cover;
-  height: 140px;
-  margin-top: 140px
-}
-
-
-.title {
-  font-size: 13px;
-  margin-top: -250px;
-  margin-left: 10px;
-  text-align: center;
-
-}
-
-.title h1{
-  width: 100%;
-  font-size: 13px;
-}
-
-.informations{
-  background-color: #5badd3;
-  width: 90px;
-  height: 30px;
-  border: 1px solid #5badd3;
-  border-radius: 3px / 3px;
-  margin-left: 110px;
-}
-
-#services{
-  height: 550px;
-}
-
-.benefit{
-  display: block;
-}
-
-.picture img{
-  margin-left: 20px;
-  width: 250px;
-}
-
-.different_services{
-margin-left: 110px;
-}
-
-.space_bar{
-  width: 50px;
-}
-
-.tab li {
-  flex-wrap: wrap;
-  margin-right: 50px;
-}
-
-.project_images{
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
-
-#contact{
-    background-color: #693fc1;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.all{
-    background-color: #c61d6f;
-}
-
-.address{
-    background-color: azure;
-}
-
-.form{
-    background-color: coral;
-}
-
-#name, #email, #subject{
-    border-radius: 5px / 5px;
-    font-size: 0.8em;
-    width: 250px;
-}
-
- #commentaire{
-    border-radius: 5px / 5px;
-    font-size: 0.9em;
-    width: 250px;
- }
-
-#send{
-    font-size: 1em;
-    height: 50px;
-}
-
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Agency</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+		  crossorigin="anonymous">
+	<link rel="stylesheet" type ="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+</style>
+</head>
+
+<body>
+	<div id="page_block">
+		<header>
+			<!--en tete-->
+			<div id="header">
+				<!--Nav + ancre-->
+				<div class="menu">
+		            <div class="logo"><img src="images/logo.png"></div>
+		            <input class="burger" type="checkbox">
+		            <nav>
+		                <a href="#home"><li>Accueil</li></a>
+		        		<a href="#services"><li>Services</li></a>
+		                <a href="#project"><li>Portfolio</li></a>
+		                <a href="#contact"><li>Contact</li></a>
+		            </nav>
+		        </div>
+
+
+				<!--TITRE-->
+				<div id="home">
+					<!--Background image + slider-->
+					<div class="title">
+						<h1><span class="color">WEBAGENCY</span>: L' AGENCE DE TOUS VOS PROJETS !</h1>
+						<p> Vous avez un projet Web ? La Webagency vous aide à le réaliser !</p>
+						<p class="informations"><a href="#contact">Plus d'infos</a></p>
+					</div>
+				</div>
+			</div>
+
+			<section id="previous_next_bouton">
+				<div class="bouton" id="previous_bouton">
+					<p><a href="#">&nbsp;&nbsp;&lt;</a></p>
+				</div>
+				<div class="bouton" id="next_bouton" >
+					<p><a href="#">&gt;&nbsp;&nbsp;</a></p>
+				</div>
+			</section>
+
+		</header>
+
+		<section id="services">
+			<div class="service_title">
+				<h2>Nos Services</h2>
+				<p>Webagency vous propose un accompagnement personnalisé pour réaliser tous vos projets : de la conception d'un site web, le design, le développement, le référencement etc... </p>
+			</div>
+
+			<div class="space">
+					<div class="space_bar"></div>
+					<div class="round"></div>
+					<div class="space_bar"></div>
+				</div>
+
+		
+			<div class="benefit">
+				<!--image-->
+				<div class="picture"><img src="images/main-feature.png" alt="ordinateur"></div>
+				<!--les services-->
+				<div class="different_services">
+					<!--image icone UX-->
+					<div class="all_services">
+						<div class="icone_services">
+							<i class="fas fa-chart-line"></i>
+							<i class="fas_fa-circle"></i>
+						</div>
+						<h3>UX design</h3>
+						<p>On vous accompagne dans la conception de l'architecture de votre site et de ses fonctionnamités, de la création des wireframes à l'organisation de test des utilisatuers tout en utilisant les dernières tendances numérique.</p>
+					</div>
+					
+					<!--Image icone UI-->
+					<div class="all_services">
+						<div class="icone_services">
+							<i class="fas fa-cubes"></i>
+							<i class="fas_fa-circle"></i>
+						</div>
+						<div class="description_services">
+							<h3>UI design</h3>
+							<p>On intervient dans la création de l'ensemble des maquettes définitives de votre application dans le respect du cahier des charges, des différents plateformes jusqu'à la création d'un prototype fonctionnel. </p>
+						</div>
+					</div>
+					
+					<!--image icone SEO-->
+					<div class="all_services">
+						<div class="icone_services">
+							<i class="far fa-chart-pie"></i>
+							<i class="fas_fa-circle"></i>
+						</div>
+
+						<div class="description_services">
+							<h3>SEO</h3>
+							<p>Nous mettons en place toutes les stratégies nécessaires pour réussir à obtenir un meilleur référencement de votre site web. Et nous vous accompagnerons également toutes vos communications numérique afin d'avoir une meilleure notoriété. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!--SECTION PROJECT-->
+		<section id="project">
+			<div class="project_title">
+				<h2>Nos projets</h2>
+				<p>Voici quelques exemples des projets réalisées </p>
+			</div>
+
+			<div class="space">
+				<div class="space_bar"></div>
+				<div class="round"></div>
+				<div class="space_bar"></div>
+			</div>
+				 
+			<div class="tab">
+				<ul>
+					<li><a href="#tab">All work</a></li>
+					<li><a href="#tab">Creative</a></li>
+					<li><a href="#tab">Corporate</a></li>
+					<li><a href="#tab">Portofolio</a></li>
+				</ul>
+			 </div>
+
+			 <div class="image">
+			 	<figure>
+					<img class="project_images" src="images/portfolio/01.jpg" alt="">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Modern optica - </p><br>
+						<p class="size">Site d'optique e-commerce</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/02.jpg" alt="">
+					<figcaption>
+					<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Portfolio 2 - Website 2</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/03.jpg" alt="">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Portfolio 3 - Website 3</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/04.jpg" alt="">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Portfolio 4 - Website 4</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/05.jpg" alt="">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Portfolio 5 - Website 5</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/06.jpg" alt="">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Portfolio 4 - Website 4</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/07.jpg" alt="">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Portfolio 4 - Website 4</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/08.jpg" alt="">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<p>Portfolio 4 - Website 4</p>
+					</figcaption>
+				</figure>
+			 </div>
+		</section>
+
+		<!--Pied de pages-->
+		<footer>
+			<div id="contact">
+				<div class="contact_title">
+					<h2>Contact</h2>
+					<p>Pour plus d'information, n'hésitez pas nous contacter !</p>
+				</div>
+
+				<div class="space">
+					<div class="space_bar"></div>
+					<div class="round"></div>
+					<div class="space_bar"></div>
+				</div>
+
+				<!--MAPS-->
+				<div class="maps_form">
+					<div class="maps">
+						<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680714!2d2.347636915418951!3d48.87305177928902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1558515470302!5m2!1sfr!2sfr" width="1400" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+
+					<div class="all">
+						<div class="address">
+							<h2>Contact Info</h2>
+							<p> WebAgency SAS<br>25 Rue d'Hauteville 75010 Paris <br>Tel : 01.02.03.04.05</p>
+						</div>
+
+						<div class="form">
+							<form>
+								<p>
+									<input type="text" name="Name" id="name"placeholder="Name"/><br>
+									<input type="email" name="Email" id="email" placeholder="Email"/><br>
+									<input type="text" name="text" id="subject" placeholder="Subject"/><br>
+									<textarea name="commentaire" name="commentaire" id ="commentaire"placeholder="Commentaire"></textarea><br>
+									<input type="submit" id="send" value="Send Message">
+								</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
