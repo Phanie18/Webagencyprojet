@@ -1,263 +1,772 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Web Agency</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-		  crossorigin="anonymous">
-	<link rel="stylesheet" type ="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-</style>
-</head>
+body {
+  font-family: 'roboto';
+}
 
-<body>
-	<div id="page_block">
-		<header>
-			<!--en tete-->
-			<div id="header">
-				<!--Nav + ancre-->
-				<div class="menu">
-		            <div class="logo"><img src="images/logo.png"></div>
-		            <input class="burger" type="checkbox">
-		            <nav>
-		                <a href="#home"><li>Accueil</li></a>
-		        		<a href="#services"><li>Services</li></a>
-		                <a href="#project"><li>Portfolio</li></a>
-		                <a href="#contact"><li>Contact</li></a>
-		            </nav>
-		        </div>
+.menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  position: fixed;
+  background-color: white;
+  margin-top: -85px;
+  width: 100%;
+}
 
+/*NAV + SLIDER*/
+.burger{
+  display: none;
+}
 
-				<!--TITRE-->
-				<div id="home">
-					<!--Background image + slider-->
-					<div class="title">
-						<h1><span class="color">WEBAGENCY</span>: L' AGENCE DE TOUS VOS PROJETS !</h1>
-						<p> Vous avez un projet Web ? La Webagency vous aide à le réaliser !</p>
-						<p class="informations"><a href="#contact">Plus d'infos</a></p>
-					</div>
-				</div>
-			</div>
+nav {
+  display: flex;
+  align-items: center;
+}
 
-			<section id="previous_next_bouton">
-				<div class="bouton" id="previous_bouton">
-					<p><a href="#">&nbsp;&nbsp;&lt;</a></p>
-				</div>
-				<div class="bouton" id="next_bouton" >
-					<p><a href="#">&gt;&nbsp;&nbsp;</a></p>
-				</div>
-			</section>
+nav li{
+  list-style-type: none;
+}
 
-		</header>
+nav a{
+  text-decoration: none;
 
-		<section id="services">
-			<div class="service_title">
-				<h2>Nos Services</h2>
-				<p>Webagency vous propose un accompagnement personnalisé pour réaliser tous vos projets : de la conception d'un site web, le design, le développement, le référencement etc... </p>
-			</div>
+}
+nav li {
+  padding: 30px 15px 30px 15px;
 
-			<div class="space">
-					<div class="space_bar"></div>
-					<div class="round"></div>
-					<div class="space_bar"></div>
-				</div>
+ 
+}
 
-		
-			<div class="benefit">
-				<!--image-->
-				<div class="picture"><img src="images/main-feature.png" alt="ordinateur"></div>
-				<!--les services-->
-				<div class="different_services">
-					<!--image icone UX-->
-					<div class="all_services">
-						<div class="icone_services">
-							<i class="fas fa-chart-line"></i>
-							<i class="fas_fa-circle"></i>
-						</div>
-						<h3>UX design</h3>
-						<p>On vous accompagne dans la conception de l'architecture de votre site et de ses fonctionnamités, de la création des wireframes à l'organisation de test des utilisatuers tout en utilisant les dernières tendances numérique.</p>
-					</div>
-					
-					<!--Image icone UI-->
-					<div class="all_services">
-						<div class="icone_services">
-							<i class="fas fa-cubes"></i>
-							<i class="fas_fa-circle"></i>
-						</div>
-						<div class="description_services">
-							<h3>UI design</h3>
-							<p>On intervient dans la création de l'ensemble des maquettes définitives de votre application dans le respect du cahier des charges, des différents plateformes jusqu'à la création d'un prototype fonctionnel. </p>
-						</div>
-					</div>
-					
-					<!--image icone SEO-->
-					<div class="all_services">
-						<div class="icone_services">
-							<i class="far fa-chart-pie"></i>
-							<i class="fas_fa-circle"></i>
-						</div>
+nav li:hover{
+  border-top: 3px solid #5CADD3;
+  margin-bottom: 2px;
 
-						<div class="description_services">
-							<h3>SEO</h3>
-							<p>Nous mettons en place toutes les stratégies nécessaires pour réussir à obtenir un meilleur référencement de votre site web. Et nous vous accompagnerons également toutes vos communications numérique afin d'avoir une meilleure notoriété. </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+}
 
 
+/*--------------------SLIDER--------------------*/
+#home{
+  margin-top: 85px;
+    background:url(images/slider/bg1.jpg);
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
 
-		<!--SECTION PROJECT-->
-		<section id="project">
-			<div class="project_title">
-				<h2>Nos projets</h2>
-				<p>Voici quelques exemples des projets réalisées </p>
-			</div>
+.title h1{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  width: 70%;
+}
 
-			<div class="space">
-				<div class="space_bar"></div>
-				<div class="round"></div>
-				<div class="space_bar"></div>
-			</div>
-				 
-			<div class="tab">
-				<ul>
-					<li><a href="#tab">All work</a></li>
-					<li><a href="#tab">Creative</a></li>
-					<li><a href="#tab">Corporate</a></li>
-					<li><a href="#tab">Portofolio</a></li>
-				</ul>
-			 </div>
+.title p{
+  color: white;
+  font-size:20px;
+}
 
-			 <div class="image">
-			 	<figure>
-					<img class="project_images" src="images/portfolio/01.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Modern optica - </p><br>
-						<p class="size">Site d'optique e-commerce</p>
-					</figcaption>
-				</figure>
+.color{
+  color: #50b2d5;
+}
 
-				<figure>
-					<img class="project_images" src="images/portfolio/02.jpg" alt="">
-					<figcaption>
-					<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 2 - Website 2</p>
-					</figcaption>
-				</figure>
+.title{
+  margin-left: 90px;
+}
 
-				<figure>
-					<img class="project_images" src="images/portfolio/03.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 3 - Website 3</p>
-					</figcaption>
-				</figure>
+.informations{
+  background-color: #50b2d5;
+  color: #ffffff;
+  width: 135px;
+  height: 50px;
+  border: 1px solid #50b2d5;
+  border-radius: 3px / 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.informations a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
 
-				<figure>
-					<img class="project_images" src="images/portfolio/04.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
+#precedent {
+    left: -35px;
+    padding-left: 25px;
 
-				<figure>
-					<img class="project_images" src="images/portfolio/05.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 5 - Website 5</p>
-					</figcaption>
-				</figure>
+  }
 
-				<figure>
-					<img class="project_images" src="images/portfolio/06.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
+  .boutonSlider {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    text-decoration: none;
+    height: 70px;
+    width: 45px;
+    border-radius: 100%;
+    position: absolute;
+    top:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 
-				<figure>
-					<img class="project_images" src="images/portfolio/07.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
+  #previous_bouton{
+    background-color: rgba(0,0,0,0.4);
+    width: 60px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 390px;
+    left: -18px;
+  }
 
-				<figure>
-					<img class="project_images" src="images/portfolio/08.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
-			 </div>
-		</section>
+#previous_bouton a, #next_bouton a{
+  text-decoration: none;
+}
 
-		<!--Pied de pages-->
-		<footer>
-			<div id="contact">
-				<div class="contact_title">
-					<h2>Contact</h2>
-					<p>Pour plus d'information, n'hésitez pas nous contacter !</p>
-				</div>
+  #next_bouton{
+    right: -18px;
+    background-color: rgba(0,0,0,0.4);
+    width: 60px;
+    height: 85px;
+    border-radius: 50%;
+    top: 390px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-				<div class="space">
-					<div class="space_bar"></div>
-					<div class="round"></div>
-					<div class="space_bar"></div>
-				</div>
+/*-------------SERVICES---------------*/
+.service_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-				<!--MAPS-->
-				<div class="maps_form">
-					<div class="maps">
-						<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680714!2d2.347636915418951!3d48.87305177928902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1558515470302!5m2!1sfr!2sfr" width="1400" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
+#services{
+   height: 1022px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-					<div class="all">
-						<div class="address">
-							<h2>Contact Info</h2>
-							<p> WebAgency SAS<br>25 Rue d'Hauteville 75010 Paris <br>Tel : 01.02.03.04.05</p>
-						</div>
+.service_title{
+  margin-left: 10px;
+}
 
-						<div class="form">
-							<form>
-								<p>
-									<input type="text" name="Name" id="name"placeholder="Name"/><br>
-									<input type="email" name="Email" id="email" placeholder="Email"/><br>
-									<input type="text" name="text" id="subject" placeholder="Subject"/><br>
-									<textarea name="commentaire" name="commentaire" id ="commentaire"placeholder="Commentaire"></textarea><br>
-									<input type="submit" id="send" value="Send Message">
-								</p>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-</body>
-</html>
+.service_title h2{
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+.service_title p{
+  margin-top: 10px;
+  text-align: justify;
+  width: 680px;
+}
+
+.benefit{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.different_services{
+  margin-left: 190px;
+  margin-top: 30px;
+  width: 70%;
+}
+
+.different_services h3{
+  font-size: 25px;
+}
+
+.icone_services{
+  width: 70px;
+  height: 70px;
+  color: #50b2d5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+
+/*-----------------------------PROJET--------------------------*/
+
+#project{
+  background-color: #f5f5f5;
+  height: 745px;
+}
+
+.project_title{
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*---------------------------SEPARATEUR--------------------------*/
+.space{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.space_bar{
+  background-color: #f0f0f0;
+  width: 120px;
+  height:1px;
+
+}
+
+.round{
+  background-color: #50b2d5;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px / 50px;
+  border: solid 6px #ffffff;
+}
+
+/*-------------------------------TAB-------------------------------*/
+.tab{
+  display: flex;
+  justify-content: center;
+}
+
+.tab ul{
+  display: flex;
+  list-style-type: none;
+  background-color: #e5e5e5;
+}
+
+.tab a{
+  text-decoration: none;
+
+}
+.tab li {
+  margin-right: 30px;
+
+}
+
+/*--------------------------------LEGENDE-----------------------------*/
+
+.image_project{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(24,24,24,0.6);
+  color: white;
+  width: 250px;
+  height: 50px;
+  margin-top: -75px;
+  position: absolute;
+
+}
+
+
+.project_images{
+    width: 250px;
+    height: 175px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.icone {
+  border: 1px solid white;
+  position: absolute;
+  top: -18px;
+  right: 4px;
+  width: 30px;
+  height: 30px;
+  background-color: #50b2d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+figcaption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  width: 250px;
+  height: 50px;
+  margin-top: -75px;
+  position: none
+}
+
+figcaption:hover{
+
+
+
+  
+}
+
+figcaption p{
+  font-size: 13px;
+}
+
+/*------------------SECTION CONTACT-----------------*/
+
+.contact_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -35px;
+}
+
+.contact_title p {
+  margin-top: -10px;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.maps{
+  position: absolute;
+}
+
+#contact{
+
+    height: 550px;
+    margin-top: 35px;
+}
+
+.all{
+    background-color:rgba(229,229,229,0.8);
+    position: relative;
+    left: 780px;
+    width: 330px;
+    margin-right: 250px;
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.form{
+    margin-right: 200px;
+    width: 330px;
+    height: 345px;
+}
+
+#name, #email, #subject{
+    width: 300px;
+    margin-bottom: 10px;
+    height: 25px;
+    border-radius: 5px / 5px;
+    font-size: 0.8em;
+}
+
+ #commentaire{
+    width: 300px;
+    margin-bottom: 10px;
+    height: 150px;
+    border-radius: 5px / 5px;
+    font-size: 0.9em;
+ }
+
+#send{
+    width: 135px;
+    height: 45px;
+    font-size: 15px;
+    background-color: #50b2d5;
+    color: white;
+    border-radius: 5px / 5px;
+
+}
+
+h2{
+  font-size: 35px;
+}
+
+p{
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+/*-------------------------MEDIA QUERIES------------------------*/
+
+@media screen and (max-width: 750px){
+  p{font-size: 15px;}
+  h2{font-size: 30px;}
+  h3{font-size: 25px;}
+
+/*----------------------------NAVIGATION------------------------*/
+body
+{
+  background:#fff;
+  margin:0;
+  padding:0;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+}
+
+nav a
+{
+  color:#50b2d5;
+  text-decoration:none;
+}
+
+.material-icons
+{
+  font-size:24px;
+  margin-right:12px;
+  vertical-align:text-bottom;
+}
+.burger{
+  display: block;
+}
+
+.menu
+{
+  display: block;
+  color:#50b2d5;
+  height:90px;
+  position:relative;
+  margin-top: 0px;
+
+
+}
+
+.menu .title
+{
+  font-size:30px;
+  font-weight:bold;
+  line-height:50px;
+  padding:0 20px;
+  text-transform:uppercase;
+}
+
+.menu nav
+{
+  background:inherit;
+  font-size:20px;
+  font-weight:bold;
+  height:0;
+  overflow:hidden;
+  text-transform:uppercase;
+  transition:height .2s;
+}
+
+.menu nav > *
+{
+  display:block;
+  letter-spacing:1px;
+  line-height:2.5;
+  padding:0 20px;
+  width:100%;
+}
+
+.menu nav input
+{
+  background:rgba(0,0,0,.2);
+  border:none;
+  color:#50b2d5;
+}
+
+.menu .burger
+{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  color:inherit;
+  cursor:pointer;
+  font-size:30px;
+  line-height:50px;
+  margin:0;
+  outline:0;
+  padding:0;
+  position:absolute;
+  text-align:center;
+  top:0;
+  right:10px;
+  width:80px;
+}
+
+.menu .burger:before
+{
+  content:'menu';
+}
+
+.menu .burger:checked:before
+{
+  content:'close';
+}
+
+.menu .burger:checked + nav
+{
+  height:calc(100vh - 50px);
+}
+
+/*---------------------------------HEADER-----------------------------*/
+
+.logo img{
+  width: 50%;
+}
+
+#home{
+  background-size: cover;
+  height: 200px;
+  margin-top: 140px
+}
+
+
+.title {
+  height: 150px;
+  font-size: 13px;
+  margin-top: -330px;
+  margin-left: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1{
+  width: 100%;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.title p{
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.informations{
+  background-color: #5badd3;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #5badd3;
+  border-radius: 3px / 3px;
+  margin-left: 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.informations a{
+  font-size: 16px;
+}
+
+/*----------------BOUTON PRECEDENT/ NEXT SLIDER ------------*/
+#previous_bouton, #next_bouton{
+  top: 300px;
+  height: 70px;
+  width: 50px;
+}
+
+/*-------------------------SECTION SERVICE----------------*/
+#services{
+  height: 1190px;
+}
+/*------------------------TITRE SERVICE---------------------*/
+.service_title p{
+  width: 85%;
+}
+
+/*------------------------------SEPARATEUR----------------------*/
+.space_bar{
+  width: 50px;
+}
+
+.tab li {
+  flex-wrap: wrap;
+  margin-right: 50px;
+}
+
+/*------------------------IMG SERVICE------------------------*/
+.picture {
+  margin-top: 300px;
+ display:flex;
+  justify-content: center;
+padding: 0px / 0px;
+}
+
+.picture img{
+width: 80%;
+height: 250px;
+}
+
+
+/*----------------------DIFFERENT SERVICES------------------*/
+.all_services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+}
+
+.benefit h3{
+  font-size: 25px;
+}
+
+.benefit p{
+  font-size: 15px;
+}
+
+
+.different_services{
+margin-left: 12px;
+text-align: center;
+}
+/*-----------------------SECTION PROJECT-------------------*/
+#project{
+  height: 2000px;
+}
+/*------------------------PROJET TITLE----------------------*/
+
+.project_title p{
+  text-align: center;
+  margin-top: -5px;
+}
+/*------------------------------TAB---------------------------*/
+
+.tab li {
+  margin: 0px;
+  padding: 10px;
+  font-size: 12px;
+  font-size: 15px;
+  border-radius: 5px / 5px;
+  border : 1px solid black;
+  text-align: center;
+}
+
+/*-------------------------IMAGE PROJECT---------------------*/
+
+.image{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.project_images{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/*-----------------SECTION CONTACT--------------------------*/
+/*-------------------------MAPS------------------------------*/
+
+.maps{
+  width:750px;
+  height: 300px;
+  position: absolute;
+}
+
+/*---------------------------FORMULAIRE-----------------------*/
+
+#contact{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------------------ADRESSE---------------------------*/
+.address h2{
+margin-bottom: 5px;
+}
+
+.address p, .address h2{
+  margin-top: 0px;
+  text-align: center;
+}
+
+
+/*------------------------FORMULAIRE-----------------------*/
+.all{
+  position: relative;
+  top: 300px;
+  left: 0px;
+  width: 720px;
+}
+
+form p{
+width: 720px;
+}
+
+#name, #email, #subject{
+    border-radius: 5px / 5px;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+ #commentaire{
+    border-radius: 5px / 5px;
+    font-size: 0.9em;
+    width: 100%;
+ }
+
+#send{
+    font-size: 1em;
+    height: 50px;
+}
+
+}
+
+@media screen and (max-width: 320px){
+  /*-----------------------SERVICES----------------------------*/
+  #services{
+    height: 1350px;
+  }
+
+  /*------------------------TAB--------------------------*/
+  .tab ul{
+    margin-left: 0px;
+  }
+
+
+  /*--------------------CONTACT---------------------------*/
+  .maps{
+    width: 320px;
+  }
+  .all, form p{
+    width: 320px;
+    padding: 0px;
+  }
+
+}
