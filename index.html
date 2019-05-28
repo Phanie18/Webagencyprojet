@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type ="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </style>
 </head>
 
@@ -29,8 +29,6 @@
 		                <a href="#contact"><li>Contact</li></a>
 		            </nav>
 		        </div>
-
-
 				<!--TITRE-->
 				<div id="home">
 					<!--Background image + slider-->
@@ -44,48 +42,53 @@
 
 			<section id="previous_next_bouton">
 				<div class="bouton" id="previous_bouton">
-					<p><a href="#">&nbsp;&nbsp;&lt;</a></p>
+					<p>
+						<a href="#">&nbsp;&nbsp;&lt;</a>
+					</p>
 				</div>
 				<div class="bouton" id="next_bouton" >
-					<p><a href="#">&gt;&nbsp;&nbsp;</a></p>
+					<p>
+						<a href="#">&gt;&nbsp;&nbsp;</a>
+					</p>
 				</div>
 			</section>
-
 		</header>
 
 		<section id="services">
 			<div class="service_title">
 				<h2>Nos Services</h2>
-				<p>Webagency vous propose un accompagnement personnalisé pour réaliser tous vos projets : de la conception d'un site web, le design, le développement, le référencement etc... </p>
-			</div>
-
-			<div class="space">
+				<div class="space">
 					<div class="space_bar"></div>
 					<div class="round"></div>
 					<div class="space_bar"></div>
 				</div>
+				<p>Webagency vous propose un accompagnement personnalisé pour réaliser tous vos projets : de la conception d'un site web, le design, le développement, le référencement etc... </p>
+			</div>
 
-		
 			<div class="benefit">
 				<!--image-->
-				<div class="picture"><img src="images/main-feature.png" alt="ordinateur"></div>
+				<div class="picture">
+					<img src="images/main-feature.png" alt="ordinateur">
+				</div>
 				<!--les services-->
 				<div class="different_services">
 					<!--image icone UX-->
 					<div class="all_services">
 						<div class="icone_services">
 							<i class="fas fa-chart-line"></i>
-							<i class="fas_fa-circle"></i>
+							<div class="round1"></div>
 						</div>
-						<h3>UX design</h3>
-						<p>On vous accompagne dans la conception de l'architecture de votre site et de ses fonctionnamités, de la création des wireframes à l'organisation de test des utilisatuers tout en utilisant les dernières tendances numérique.</p>
+						<div class="description_services">
+							<h3>UX design</h3>
+							<p>On vous accompagne dans la conception de l'architecture de votre site et de ses fonctionnamités, de la création des wireframes à l'organisation de test des utilisatuers tout en utilisant les dernières tendances numérique.</p>
+						</div>
 					</div>
 					
 					<!--Image icone UI-->
 					<div class="all_services">
 						<div class="icone_services">
 							<i class="fas fa-cubes"></i>
-							<i class="fas_fa-circle"></i>
+							<div class="round1"></div>
 						</div>
 						<div class="description_services">
 							<h3>UI design</h3>
@@ -96,8 +99,8 @@
 					<!--image icone SEO-->
 					<div class="all_services">
 						<div class="icone_services">
-							<i class="far fa-chart-pie"></i>
-							<i class="fas_fa-circle"></i>
+							<i class="fas fa-chart-pie"></i>
+							<div class="round1"></div>
 						</div>
 
 						<div class="description_services">
@@ -108,133 +111,136 @@
 				</div>
 			</div>
 		</section>
-
-
-
 		<!--SECTION PROJECT-->
 		<section id="project">
 			<div class="project_title">
 				<h2>Nos projets</h2>
-				<p>Voici quelques exemples des projets réalisées </p>
-			</div>
-
-			<div class="space">
-				<div class="space_bar"></div>
-				<div class="round"></div>
-				<div class="space_bar"></div>
-			</div>
-				 
-			<div class="tab">
-				<ul>
-					<li><a href="#tab">All work</a></li>
-					<li><a href="#tab">Creative</a></li>
-					<li><a href="#tab">Corporate</a></li>
-					<li><a href="#tab">Portofolio</a></li>
-				</ul>
-			 </div>
-
-			 <div class="image">
-			 	<figure>
-					<img class="project_images" src="images/portfolio/01.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Modern optica - </p><br>
-						<p class="size">Site d'optique e-commerce</p>
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img class="project_images" src="images/portfolio/02.jpg" alt="">
-					<figcaption>
-					<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 2 - Website 2</p>
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img class="project_images" src="images/portfolio/03.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 3 - Website 3</p>
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img class="project_images" src="images/portfolio/04.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img class="project_images" src="images/portfolio/05.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 5 - Website 5</p>
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img class="project_images" src="images/portfolio/06.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img class="project_images" src="images/portfolio/07.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
-
-				<figure>
-					<img class="project_images" src="images/portfolio/08.jpg" alt="">
-					<figcaption>
-						<div class="icone">
-							<i class="fa fa-eye iconeOeil"></i>
-						</div>
-						<p>Portfolio 4 - Website 4</p>
-					</figcaption>
-				</figure>
-			 </div>
-		</section>
-
-		<!--Pied de pages-->
-		<footer>
-			<div id="contact">
-				<div class="contact_title">
-					<h2>Contact</h2>
-					<p>Pour plus d'information, n'hésitez pas nous contacter !</p>
-				</div>
-
 				<div class="space">
 					<div class="space_bar"></div>
 					<div class="round"></div>
 					<div class="space_bar"></div>
 				</div>
+				<p>Voici quelques exemples des projets réalisées </p>
+			</div>
+				 
+			<div class="tab_onglet">
+				<div class="onglet">
+					<div class="tab_triangle">
+						<p class="tab1"><a href="#tab">All work</a></p>
+						<div class="triangle-code"></div>
+					</div>
+					<div class="tab_triangle">
+						<p class="onglet_tab"><a href="#tab">Creative</a></p>
+						<div class="triangle-code"></div>
+					</div>
+					<div class="tab_triangle">
+						<p class="onglet_tab"><a href="#tab">Corporate</a></p>
+						<div class="triangle-code"></div>
+					</div>
+					<div class="tab_triangle">
+						<p class="tab2"><a href="#tab">Portfolio</a></p>
+						<div class="triangle-code"></div>
+					</div>
+				</div>
+			</div>
 
+			 <div class="image">
+			 	<figure class="image_area">
+					<img class="project_images" src="images/portfolio/01.jpg" alt="Lunette avec un gros nez">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Moderne optica</h3>
+						<p>Site optique e-commerce</p>
+					</figcaption>
+				</figure>
+
+				<figure class="image_area">
+					<img class="project_images" src="images/portfolio/02.jpg" alt="un homme déguiser en lapin">
+					<figcaption>
+						<div class="icone">
+								<i class="fa fa-eye iconeOeil"></i>
+							</div>
+						<h3>Deguisons nous !</h3>
+						<p>Site de déguisement et de décoration de fêtes</p>
+					</figcaption>
+				</figure>
+
+				<figure class="image_area">
+					<img class="project_images" src="images/portfolio/03.jpg" alt="logo Pompadour">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Pompadour Soda</h3>
+						<p>Site de boisson</p>
+					</figcaption>
+				</figure>
+
+				<figure class="image_area">
+					<img class="project_images" src="images/portfolio/04.jpg" alt="un cahier">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3></h3>
+						<p>Site de </p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/05.jpg" alt="2 sacs de Shopping">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Moderna Shopping</h3>
+						<p>Site de vêtement e-commerce</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/06.jpg" alt="des immeubles">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Design Moderna</h3>
+						<p>Site de mobilier et décoration</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/07.jpg" alt="logo d'un fusée sortie d'un smartphone">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Fuse Technology</h3>
+						<p>Logo d'une entreprise mobile</p>
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img class="project_images" src="images/portfolio/08.jpg" alt="fourniture bureautiques">
+					<figcaption>
+						<div class="icone">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Point d'encre</h3>
+						<p>Founiture bureautique et papeterie</p>
+					</figcaption>
+				</figure>
+			 </div>
+		</section>
+		<!--Pied de pages-->
+		<footer>
+			<div id="contact">
 				<!--MAPS-->
 				<div class="maps_form">
 					<div class="maps">
-						<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680714!2d2.347636915418951!3d48.87305177928902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1558515470302!5m2!1sfr!2sfr" width="1400" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680714!2d2.347636915418951!3d48.87305177928902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1558515470302!5m2!1sfr!2sfr" width="1440" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 
 					<div class="all">
