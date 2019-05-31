@@ -47,7 +47,7 @@ nav a{
 
 nav li:hover{
   border-top: 3px solid #5CADD3;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   color: rgb(109,109,109);
 }
 
@@ -199,7 +199,11 @@ nav li:visited{
 
 /*----------------------------PICTURE SERVICES-----------------------*/
 .picture{
-  margin-top: 35px;
+  position: relative;
+  top: 60px;
+  margin-left: -12px;
+  margin-right: 25px;
+  padding: 0px;
 }
 
 /*--------------------------DESCRIPTIONS SERVICES------------------*/
@@ -217,8 +221,12 @@ nav li:visited{
  justify-content: space-between;
 }
 
-.description_services{
-  width: 80%;
+.description_services {
+  width:80%;
+}
+
+.description_services p{
+	width: 95%;
 }
 /*-----------------------------ICONE SERVICES----------------------*/
 .icone_services{
@@ -230,8 +238,9 @@ nav li:visited{
   justify-content: center;
   align-items: center;
   border: 1px solid grey;
-  margin-top: 35px;
-  margin-left: 45px;
+  position: relative;
+  right: -40px;
+  top: 26px;
 }
 
 .icone_services i{
@@ -270,6 +279,7 @@ nav li:visited{
 .image{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 
@@ -292,32 +302,33 @@ nav li:visited{
   font-weight: bold;
 }
 
-.onglet a {
+.tab_triangle a {
   text-decoration: none;
   color: #787a7e;
   font-size: 15px;
-  ;
-
 }
 
-.onglet p{
+.tab_triangle p{
   padding: 10px;
   background-color: #E5E5E5;
   margin-left: 8px;
   margin-right: -8px;
 }
 
-.onglet a:hover {
-  color: white;
-
-}
-
-.onglet p:hover{
+.tab_triangle p:hover{
   background-color:#5cadd3;
-  color: white;
   border-bottom: 4px solid #5CADD3;
   border-bottom: 3px solid #468cad;
   padding-bottom: 10px;
+}
+
+.tab_triangle a:hover, .triangle-code{
+	color: white;
+	opacity: 1;
+}
+
+.triangle-code{
+	opacity: 1;
 }
 
 .tab1 {
@@ -328,7 +339,6 @@ border-top-left-radius: 5px;
 .tab2{
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-
 }
 
 /*-----------------------Triangle-----------------*/
@@ -342,6 +352,7 @@ border-top-left-radius: 5px;
  position: relative;
  top: -26px;
  right: -51px;
+ opacity: 0;
 }
 
 /*--------------------------FIGURE/FIDCAPTION------------------------*/
@@ -372,7 +383,7 @@ figcaption {
   height: 65px;
   margin-top: -79px;
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   padding: 5px 5px 5px 5px;
 }
 
@@ -384,8 +395,9 @@ figcaption h3, figcaption p{
   text-align: center;
 }
 
-figcaption:hover{
-
+figure:hover figcaption{
+opacity: 1;
+transition: 1s;
 }
 
 .project_images{
@@ -425,6 +437,13 @@ figcaption:hover{
 }
 
 /*---------------------------------MAPS-------------------------------*/
+.filter{
+  width: 1440px;
+  height: 600px;
+  position: absolute;
+  background-color: #5cadd3;
+}
+
 .contact_title{
   display: flex;
   flex-direction: column;
@@ -438,8 +457,8 @@ figcaption:hover{
 
 .maps{
   position: absolute;
- filter: sepia(100%) 
-
+  opacity: 0.7;
+  position: relative;
 }
 
 /*------------------------------FORMULAIRE----------------------------*/
@@ -448,11 +467,25 @@ figcaption:hover{
     position: relative;
     left: 780px;
     width: 330px;
-    margin-right: 250px;
     padding-top: 10px;
     padding-left: 35px;
     padding-bottom: 10px;
     padding-right: 10px;
+    margin-top: -575px;
+}
+
+.address h2{
+	font-size: 25px;
+	margin-bottom: 6px;
+	text-transform: inherit;
+}
+.address p{
+	margin:2px;
+	font-size: 16px;
+}
+
+.address_size{
+	font-weight: bold;
 }
 
 .form{
@@ -464,9 +497,11 @@ figcaption:hover{
 #name, #email, #subject{
     width: 300px;
     margin-bottom: 10px;
+    border:1px solid #b0b0b0;
     height: 25px;
     border-radius: 5px / 5px;
-    font-size: 0.8em;
+    font-size:14px;
+    padding-left: 6px;
 }
 
  #commentaire{
@@ -474,17 +509,25 @@ figcaption:hover{
     margin-bottom: 10px;
     height: 150px;
     border-radius: 5px / 5px;
-    font-size: 0.9em;
+    font-size: 15px;
+    border:1px solid #b0b0b0;
+    padding-left: 6px;
+    padding-top: 6px;
  }
 
 #send{
-    width: 135px;
+	color: white;
+	font-weight: bold;
+	border-bottom: 3px solid #22709e;
+    width: 125px;
     height: 45px;
-    font-size: 15px;
+    font-size: 14px;
     background-color: #50b2d5;
     color: white;
     border-radius: 5px / 5px;
-
+}
+.dashed{
+	border-bottom: dashed 1px #b0b0b0;
 }
 /*-------------------------MEDIA QUERIES------------------------*/
 
@@ -617,7 +660,6 @@ nav a
   margin-top: 140px
 }
 
-
 .title {
   height: 150px;
   font-size: 13px;
@@ -652,7 +694,6 @@ nav a
   text-align: center;
   margin-top: 10px;
 }
-
 
 .informations a{
   font-size: 16px;
@@ -749,13 +790,6 @@ text-align: center;
 }
 
 /*-------------------------IMAGE PROJECT---------------------*/
-
-.image{
-  display: flex;
-  flex-direction: column;
- align-items: center;
-}
-
 .project_images{
     margin-top: 5px;
     margin-bottom: 0px;
@@ -817,28 +851,5 @@ width: 720px;
     font-size: 1em;
     height: 50px;
 }
-
-}
-
-@media screen and (max-width: 320px){
-  /*-----------------------SERVICES----------------------------*/
-  #services{
-    height: 1350px;
-  }
-
-  /*------------------------TAB--------------------------*/
-  .tab ul{
-    margin-left: 0px;
-  }
-
-
-  /*--------------------CONTACT---------------------------*/
-  .maps{
-    width: 320px;
-  }
-  .all, form p{
-    width: 320px;
-    padding: 0px;
-  }
 
 }
