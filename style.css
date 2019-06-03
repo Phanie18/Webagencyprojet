@@ -154,7 +154,6 @@ nav li:visited{
 /*-----------------------SECTION SERVICES-----------------------*/
 /*------------------------TITRE SERVICES------------------------*/
 #services{
-   height: 835px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,7 +261,6 @@ nav li:visited{
 /*--------------------------------SECTION PROJETS------------------*/
 #project{
   background-color: #f5f5f5;
-  height: 690px;
 }
 
 .project_title{
@@ -291,16 +289,7 @@ nav li:visited{
 }
 
 
-.onglet{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  width: 490px;
-  border-radius: 5px;
 
-  font-weight: bold;
-}
 
 .tab_triangle a {
   text-decoration: none;
@@ -314,22 +303,16 @@ nav li:visited{
   margin-left: 8px;
   margin-right: -8px;
 }
-
 .tab_triangle p:hover{
-  background-color:#5cadd3;
+	color: white;
+	background-color:#5cadd3;
   border-bottom: 4px solid #5CADD3;
   border-bottom: 3px solid #468cad;
   padding-bottom: 10px;
+  opacity: 1;
 }
 
-.tab_triangle a:hover, .triangle-code{
-	color: white;
-	opacity: 1;
-}
 
-.triangle-code{
-	opacity: 1;
-}
 
 .tab1 {
 border-bottom-left-radius: 5px;
@@ -350,10 +333,12 @@ border-top-left-radius: 5px;
  border-right : 8px solid transparent;
  border-left : 7px solid transparent;
  position: relative;
- top: -26px;
- right: -51px;
- opacity: 0;
+ top: -22px;
+ right: -40px;
+ opacity:1;
 }
+
+
 
 /*--------------------------FIGURE/FIDCAPTION------------------------*/
 /*--------------------------------IMAGE-----------------------------*/
@@ -528,328 +513,4 @@ transition: 1s;
 }
 .dashed{
 	border-bottom: dashed 1px #b0b0b0;
-}
-/*-------------------------MEDIA QUERIES------------------------*/
-
-@media screen and (max-width: 750px){
-  p{font-size: 15px;}
-  h2{font-size: 30px;}
-  h3{font-size: 25px;}
-
-/*----------------------------NAVIGATION------------------------*/
-body
-{
-  background:#fff;
-  margin:0;
-  padding:0;
-}
-
-nav{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-
-}
-
-nav a
-{
-  color:#50b2d5;
-  text-decoration:none;
-}
-
-.material-icons
-{
-  font-size:24px;
-  margin-right:12px;
-  vertical-align:text-bottom;
-}
-.burger{
-  display: block;
-}
-
-.menu
-{
-  display: block;
-  color:#50b2d5;
-  height:90px;
-  position:relative;
-  margin-top: 0px;
-
-
-}
-
-.menu .title
-{
-  font-size:30px;
-  font-weight:bold;
-  line-height:50px;
-  padding:0 20px;
-  text-transform:uppercase;
-}
-
-.menu nav
-{
-  background:inherit;
-  font-size:20px;
-  font-weight:bold;
-  height:0;
-  overflow:hidden;
-  text-transform:uppercase;
-  transition:height .2s;
-}
-
-.menu nav > *
-{
-  display:block;
-  letter-spacing:1px;
-  line-height:2.5;
-  padding:0 20px;
-  width:100%;
-}
-
-.menu nav input
-{
-  background:rgba(0,0,0,.2);
-  border:none;
-  color:#50b2d5;
-}
-
-.menu .burger
-{
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  color:inherit;
-  cursor:pointer;
-  font-size:30px;
-  line-height:50px;
-  margin:0;
-  outline:0;
-  padding:0;
-  position:absolute;
-  text-align:center;
-  top:0;
-  right:10px;
-  width:80px;
-}
-
-.menu .burger:before
-{
-  content:'menu';
-}
-
-.menu .burger:checked:before
-{
-  content:'close';
-}
-
-.menu .burger:checked + nav
-{
-  height:calc(100vh - 50px);
-}
-
-/*---------------------------------HEADER-----------------------------*/
-
-.logo img{
-  width: 50%;
-}
-
-#home{
-  background-size: cover;
-  height: 200px;
-  margin-top: 140px
-}
-
-.title {
-  height: 150px;
-  font-size: 13px;
-  margin-top: -330px;
-  margin-left: 0px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title h1{
-  width: 100%;
-  font-size: 20px;
-  color: black;
-  text-align: center;
-}
-
-.title p{
-  color: black;
-  margin-bottom: 10px;
-  margin-top: 0px;
-}
-
-.informations{
-  background-color: #5badd3;
-  width: 90px;
-  height: 30px;
-  border: 1px solid #5badd3;
-  border-radius: 3px / 3px;
-  margin-left: 0px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.informations a{
-  font-size: 16px;
-}
-
-/*----------------BOUTON PRECEDENT/ NEXT SLIDER ------------*/
-#previous_bouton, #next_bouton{
-  top: 300px;
-  height: 70px;
-  width: 50px;
-}
-
-/*-------------------------SECTION SERVICE-------------------*/
-#services{
-  height: 1190px;
-}
-/*------------------------TITRE SERVICE-----------------------*/
-.service_title p{
-  width: 85%;
-}
-
-/*------------------------------SEPARATEUR----------------------*/
-.space_bar{
-  width: 50px;
-}
-
-.tab li {
-  flex-wrap: wrap;
-  margin-right: 50px;
-}
-
-/*------------------------IMG SERVICE---------------------------*/
-.picture {
-  margin-top: 300px;
- display:flex;
-  justify-content: center;
-padding: 0px / 0px;
-}
-
-.picture img{
-width: 80%;
-height: 250px;
-}
-
-
-/*----------------------DIFFERENT SERVICES----------------------*/
-.all_services{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.benefit{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 700px;
-}
-
-.benefit h3{
-  font-size: 25px;
-}
-
-.benefit p{
-  font-size: 15px;
-}
-
-
-.different_services{
-margin-left: 12px;
-text-align: center;
-}
-/*-----------------------SECTION PROJECT-------------------*/
-#project{
-  height: 690px;
-  background-color: #f5f5f5;
-}
-/*------------------------PROJET TITLE----------------------*/
-
-.project_title p{
-  text-align: center;
-  margin-top: -5px;
-}
-/*------------------------------TAB---------------------------*/
-
-.tab li {
-  margin: 0px;
-  padding: 10px;
-  font-size: 12px;
-  font-size: 15px;
-  border-radius: 5px / 5px;
-  border : 1px solid black;
-  text-align: center;
-}
-
-/*-------------------------IMAGE PROJECT---------------------*/
-.project_images{
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
-
-/*-----------------SECTION CONTACT--------------------------*/
-/*-------------------------MAPS------------------------------*/
-
-.maps{
-  width:750px;
-  height: 300px;
-  position: absolute;
-}
-
-/*---------------------------FORMULAIRE-----------------------*/
-
-#contact{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-/*-------------------------ADRESSE---------------------------*/
-.address h2{
-margin-bottom: 5px;
-}
-
-.address p, .address h2{
-  margin-top: 0px;
-  text-align: center;
-}
-
-
-/*------------------------FORMULAIRE-----------------------*/
-.all{
-  position: relative;
-  top: 300px;
-  left: 0px;
-  width: 720px;
-}
-
-form p{
-width: 720px;
-}
-
-#name, #email, #subject{
-    border-radius: 5px / 5px;
-    font-size: 0.8em;
-    width: 100%;
-}
-
- #commentaire{
-    border-radius: 5px / 5px;
-    font-size: 0.9em;
-    width: 100%;
- }
-
-#send{
-    font-size: 1em;
-    height: 50px;
-}
-
 }
