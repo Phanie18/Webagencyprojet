@@ -1,12 +1,14 @@
-body {
-font-family: 'Roboto', sans-serif;
-padding: 0px;
-margin: 0px;
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
+
 h2{
   text-transform: uppercase;
   font-size: 35px;
 }
+
 p{
   font-size: 20px;
   text-align: justify;
@@ -15,50 +17,12 @@ p{
 
 .menu{
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  align-items: center;
-  height: 90px;
+  height: 100px;
   position: fixed;
-  background-color: white;
-  margin-top: -89px;
   width: 100%;
-  z-index: 10;
-}
-
-/*---------------------NAV ----------------------*/
-.burger{
-  display: none;
-}
-
-ul{ display: flex; }
-
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav li{
-  list-style-type: none;
-  padding: 30px 15px 30px 15px;
-  color: rgb(126,126,126);
-}
-
-nav a{
-  text-decoration: none;
-  color: #7f7f7f;
-
-}
-
-nav li:hover{
-  border-top: 3px solid #5CADD3;
-  margin-bottom: 4px;
-  padding-top: 27px;
-  color: rgb(109,109,109);
-}
-
-nav li:visited{
-  color: rgb(109,109,109);
+  background-color: white;
 }
 
 /*----------------------TITLE---------------------*/
@@ -102,61 +66,91 @@ nav li:visited{
 .information a:visited{
   color: white;
 }
+/*---------------------NAV ----------------------*/
+.burger{
+  display: none;
+}
 
+ul{ 
+  display: flex;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+nav li{
+  list-style-type: none;
+  color: rgb(126,126,126);
+  padding-right: 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #7f7f7f;
+  padding-right: 10px;
+   padding-left: 10px;
+}
+
+nav li:hover{
+  color: rgb(109,109,109);
+}
+
+nav a:hover{
+  border-top: 4px solid #5CADD3;
+  padding-top: 37px;
+
+}
 /*--------------------SLIDER--------------------*/
 #home{
-  margin-top: 85px;
+ 
     background:url(images/slider/bg1.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 550px;
+    height: 755px;
     display: flex;
     align-items: center;
 }
 
 /*-----------------BOUTON PRECEDENT/NEXT------------------*/
-.boutonSlider {
-    background: rgba(0,0,0,0.3);
-    color: white;
-    text-decoration: none;
-    height: 70px;
-    width: 45px;
-    border-radius: 100%;
-    position: absolute;
-    top:300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
 
-#previous_bouton a, #next_bouton a{
+#previous_next_button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -280px;
+}
+
+#previous_button a, #next_button a{
   text-decoration: none;
   color: white;
   position: relative;
 }
 
-#previous_bouton,#next_bouton{
-  width: 70px;
+#previous_button,#next_button{
+  width: 27px;
   height: 70px;
-  border-radius: 50%;
   background-color: rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 400px;
 }
- #previous_bouton{
+ #previous_button{
   padding-right: 14px;
   justify-content: flex-end;
-  left: -50px;
-  }
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
 
-  #next_bouton{
-    right: -47px;
+  #next_button{
+ 
     justify-content: flex-start;
     padding-left: 13px;
-    }
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;  
+}
 
 /*-----------------------SECTION SERVICES-----------------------*/
 /*------------------------TITRE SERVICES------------------------*/
@@ -164,6 +158,8 @@ nav li:visited{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
+  margin-top: -46px;
 }
 
 .service_title {
@@ -304,17 +300,18 @@ nav li:visited{
 }
 
 .tab_triangle p{
-  padding: 10px;
+  padding: 14px;
   background-color: #E5E5E5;
   margin-left: 8px;
   margin-right: -8px;
+  font-size: 15px;
 }
-.tab_triangle p:hover{
+.tab_triangle:hover > p{
   color: white;
   background-color:#5cadd3;
-  border-bottom: 4px solid #5CADD3;
   border-bottom: 3px solid #468cad;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
+
 }
 
 .tab_triangle:hover > p{
@@ -344,7 +341,7 @@ border-top-left-radius: 5px;
  border-right : 8px solid transparent;
  border-left : 7px solid transparent;
  position: relative;
- top: -27px;
+ top: -22px;
  right: -40px;
  opacity:0;
 }
@@ -371,7 +368,7 @@ figure{
 figcaption {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   background-color: rgba(24,24,24,0.6);
   color: white;
@@ -388,7 +385,7 @@ figcaption h3, figcaption p{
   margin-top: 0px;
   margin-bottom: 5px;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 figure:hover figcaption{
@@ -464,9 +461,9 @@ iframe {
 
 /*------------------------------FORMULAIRE----------------------------*/
 .all{
-    background-color:rgba(229,229,229,0.8);
+    background-color:rgba(252, 252, 252,0.7);
     position: relative;
-    left: 780px;
+    left: 60%;
     width: 330px;
     padding-top: 10px;
     padding-left: 35px;
