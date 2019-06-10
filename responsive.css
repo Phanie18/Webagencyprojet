@@ -40,6 +40,7 @@
 
   .burger{
     display: block;
+
   }
 
   .menu{
@@ -48,13 +49,14 @@
     margin-top: -288px;
     padding-top: 20px;
     z-index: 10;
+    height: 80px;
   }
 
   .menu .title{
     font-size:30px;
     font-weight:bold;
     line-height:50px;
-    padding:0 20px;
+    padding:0 0px;
     text-transform:uppercase;
   }
 
@@ -120,7 +122,7 @@
   .title{
     height: 213px;
     font-size: 13px;
-    margin-top: -280px;
+    margin-top: -492px;
     margin-left: 0px;
     width: 100%;
     display: flex;
@@ -145,7 +147,7 @@
   }
 
 /*-------------------BOUTON INFORMATION----------*/
-  .informations{
+  #informations{
     width: 34%;
     height: 30px;
     border-radius: 3px / 3px;
@@ -155,7 +157,7 @@
     margin-bottom: 10px;
   }
 
-  .informations a{
+  #informations a{
     font-size: 16px;
   }
 
@@ -165,6 +167,7 @@
     background-size: cover;
     height: 150px;
     margin-top: 288px;
+    margin-bottom: 49px;
   }
   /*----------------BOUTON PRECEDENT/ NEXT SLIDER ------------*/
   #previous_button, #next_button{
@@ -184,7 +187,8 @@
   /*-------------------------SECTION SERVICE-------------------*/
   #services{
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 27px;
+    margin-top: -32px;
   }
   /*------------------------TITRE SERVICE-----------------------*/
   .service_title p{
@@ -246,7 +250,7 @@
   .icon_services{
    margin-bottom: 20px;
    position: relative;
-   right: 21px;
+   left:-27px;
    width: 50px;
    height: 50px; 
   }
