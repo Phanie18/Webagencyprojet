@@ -233,7 +233,7 @@ nav a:hover{
   width: 88%;
 }
 /*-----------------------------ICONE SERVICES----------------------*/
-.icone_services{
+.icon_services{
   width: 70px;
   height: 70px;
   color: #50b2d5;
@@ -247,7 +247,7 @@ nav a:hover{
   top: 26px;
 }
 
-.icone_services i{
+.icon_services i{
   font-size: 29px;
   position: absolute;
 }
@@ -401,7 +401,7 @@ transition: 1s;
 }
 
 /*--------------------------------ICONE FIGCAPTION--------------------*/
-.icone {
+.icon {
   border: 2px solid white;
   position: absolute;
   top: -18px;
@@ -415,10 +415,10 @@ transition: 1s;
   border-radius: 50%;
 }
 
-.icone i{
+.icon i{
   font-size: 10px;
 }
-.icone p{
+.icon p{
   text-align: center;
 }
 
