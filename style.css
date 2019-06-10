@@ -144,7 +144,6 @@ nav a:hover{
 }
 
   #next_button{
- 
     justify-content: flex-start;
     padding-left: 13px;
     border-bottom-left-radius: 50px;
@@ -224,7 +223,7 @@ nav a:hover{
  justify-content: space-between;
 }
 
-.description_services {
+.description_services{
   width:80%;
 }
 
@@ -292,7 +291,7 @@ nav a:hover{
   justify-content: center;
 }
 
-.tab_triangle a {
+.tab_triangle a{
   text-decoration: none;
   color: #787a7e;
   font-size: 15px;
@@ -345,8 +344,6 @@ border-top-left-radius: 5px;
  opacity:0;
 }
 
-
-
 /*--------------------------FIGURE/FIDCAPTION------------------------*/
 /*--------------------------------IMAGE-----------------------------*/
 figure{
@@ -396,11 +393,10 @@ transition: 1s;
     width: 250px;
     height: 175px;
     position: relative;
-
 }
 
 /*--------------------------------ICONE FIGCAPTION--------------------*/
-.icon {
+.icon{
   border: 2px solid white;
   position: absolute;
   top: -18px;
@@ -423,13 +419,12 @@ transition: 1s;
 
 /*------------------------------SECTION CONTACT----------------------*/
 #contact{
-
   height: 550px;
   padding: 0px;
 }
 
 /*---------------------------------MAPS-------------------------------*/
-iframe {
+iframe{
   width: 100%;
   height: 600px;
 }
@@ -448,7 +443,7 @@ iframe {
   margin-top: -35px;
 }
 
-.contact_title p {
+.contact_title p{
   margin-top: -10px;
 }
 
@@ -486,43 +481,44 @@ iframe {
 }
 
 .form{
-    margin-right: 200px;
-    width: 330px;
-    height: 345px;
+  margin-right: 200px;
+  width: 330px;
+  height: 345px;
 }
 
 #name, #email, #subject{
-    width: 300px;
-    margin-bottom: 10px;
-    border:1px solid #b0b0b0;
-    height: 25px;
-    border-radius: 5px / 5px;
-    font-size:14px;
-    padding-left: 6px;
+  width: 300px;
+  margin-bottom: 10px;
+  border:1px solid #b0b0b0;
+  height: 25px;
+  border-radius: 5px / 5px;
+  font-size:14px;
+  padding-left: 6px;
 }
 
  #commentaire{
-    width: 300px;
-    margin-bottom: 10px;
-    height: 150px;
-    border-radius: 5px / 5px;
-    font-size: 15px;
-    border:1px solid #b0b0b0;
-    padding-left: 6px;
-    padding-top: 6px;
+  width: 300px;
+  margin-bottom: 10px;
+  height: 150px;
+  border-radius: 5px / 5px;
+  font-size: 15px;
+  border:1px solid #b0b0b0;
+  padding-left: 6px;
+  padding-top: 6px;
  }
 
 #send{
   color: white;
   font-weight: bold;
   border-bottom: 3px solid #22709e;
-    width: 125px;
-    height: 45px;
-    font-size: 14px;
-    background-color: #50b2d5;
-    color: white;
-    border-radius: 5px / 5px;
+  width: 125px;
+  height: 45px;
+  font-size: 14px;
+  background-color: #50b2d5;
+  color: white;
+  border-radius: 5px / 5px;
 }
+
 .dashed{
   border-bottom: dashed 1px #b0b0b0;
 }
