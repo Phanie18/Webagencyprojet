@@ -87,8 +87,6 @@ nav a:hover{
 
 .menu .burger{
   appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
   color:inherit;
   cursor:pointer;
   font-size:20px;
@@ -149,10 +147,8 @@ nav a:hover{
 
 /*-------------------BOUTON INFORMATION----------*/
 .informations{
-  background-color: #5badd3;
   width: 34%;
   height: 30px;
-  border: 1px solid #5badd3;
   border-radius: 3px / 3px;
   margin-left: 0px;
   text-align: center;
