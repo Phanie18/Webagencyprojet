@@ -6,10 +6,22 @@
   margin:0;
   padding:0;
 }
-  #page_block{width: 100%;}
-  p{font-size: 11px;}
-  h2{font-size: 20px;}
-  h3{font-size: 20px;} 
+
+  #page_block{
+    width: 100%;
+  }
+
+  p{
+    font-size: 11px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 20px;
+  } 
 
 /*----------------------------NAVIGATION------------------------*/
 nav{
@@ -18,28 +30,28 @@ nav{
   position: absolute;
 }
 
-nav a
-{
-  color:#50b2d5;
+nav a{
+  color:#3e95b5;
   text-decoration:none;
+}
+
+nav a:hover{
+  border-top: none;
 }
 
 .burger{
   display: block;
 }
 
-
-.menu
-{
+.menu{
   display: block;
-  color:#50b2d5;
-  height:45px;
-  position:relative;
-  margin-top: 0px;
+  color:#3e95b5;
+  margin-top: -288px;
+  padding-top: 20px;
+  z-index: 10;
 }
 
-.menu .title
-{
+.menu .title{
   font-size:30px;
   font-weight:bold;
   line-height:50px;
@@ -47,8 +59,7 @@ nav a
   text-transform:uppercase;
 }
 
-.menu nav
-{
+.menu nav{
   background:inherit;
   font-size:20px;
   font-weight:bold;
@@ -58,24 +69,23 @@ nav a
   transition:height .2s;
 }
 
-.menu nav > *
-{
-  display:block;
+.menu nav > *{
+  display:flex;
+  justify-content: space-between;
   letter-spacing:1px;
   line-height:2.5;
   padding:0 20px;
-  width:100%;
+  width:90%;
+  flex-wrap: wrap;
 }
 
-.menu nav input
-{
+.menu nav input{
   background:rgba(0,0,0,.2);
   border:none;
   color:#50b2d5;
 }
 
-.menu .burger
-{
+.menu .burger{
   appearance:none;
   -moz-appearance:none;
   -webkit-appearance:none;
@@ -88,32 +98,29 @@ nav a
   padding:0;
   position:absolute;
   text-align:center;
-  top:0;
+  top:11px;
   right:10px;
-  width:80px;
+  width:40px;
+  font-size: 40px;
 }
 
-.menu .burger:before
-{
-  content:'≡ Menu';
+.menu .burger:before{
+  content:'≡';
 }
 
-.menu .burger:checked:before
-{
+.menu .burger:checked:before{
   content:'x';
 }
 
-.menu .burger:checked + nav
-{
-  height:calc(100vh - 50px);
+.menu .burger:checked + nav{
+  height:calc(38vh - 83px);
   width: 100%;
 }
-
 
 /*---------------------------------HEADER-----------------------------*/
 /*----------------------TITRE---------------*/
 
-.title {
+.title{
   height: 213px;
   font-size: 13px;
   margin-top: -280px;
@@ -137,8 +144,8 @@ nav a
   margin:0;
   padding:5px;
   text-align: center;
+  width: 95%;
 }
-
 
 /*-------------------BOUTON INFORMATION----------*/
 .informations{
@@ -152,6 +159,7 @@ nav a
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .informations a{
   font-size: 16px;
 }
@@ -161,27 +169,21 @@ nav a
 #home{
   background-size: cover;
   height: 150px;
-  margin-top: 178px;
+  margin-top: 288px;
 }
 /*----------------BOUTON PRECEDENT/ NEXT SLIDER ------------*/
-#previous_bouton, #next_bouton{
-  top: 282px;
+#previous_button, #next_button{
+  top: 184px;
   height: 35px;
-  width: 21px;
+  width: 6px;
+  position: relative;
 }
 
-#next_bouton{
-  right: -15px;
-}
-
-#next_bouton a{
+#next_button a{
   right: 7px;
 }
 
-#previous_bouton{
-  left: -19px;
-}
-#previous_bouton a{
+#previous_button a{
   left: 7px;
 }
 /*-------------------------SECTION SERVICE-------------------*/
@@ -245,18 +247,16 @@ nav a
   margin-right:46px;
 }
 
-
 /*----------------------ICONE---------------------*/
-.icone_services{
+.icon_services{
  margin-bottom: 20px;
  position: relative;
  right: 21px;
  width: 50px;
- height: 50px;
-  
+ height: 50px; 
 }
 
-.icone_services i {
+.icon_services i {
   font-size: 20px;
 }
 
@@ -271,9 +271,13 @@ nav a
 .triangle-code{
   top: -18px;
 }
+
+.tab_triangle p{
+  font-size: 10px;
+}
 /*---------------------IMAGE PROJET----------------------*/
 
-.image{
+.image + figcaption{
   display: block;
   text-align: center;
 }
@@ -288,8 +292,7 @@ figure img{
 }
 
 figcaption{
-  opacity: 0;
-  left: -5000px;
+  opacity:1;
 }
 
 
@@ -313,6 +316,7 @@ figcaption{
   height: 360px;
   width: 63%;
   padding: 0;
+  margin-left: 90px;
 }
 
 .address{
@@ -333,6 +337,7 @@ figcaption{
 
 .form{
  width: 85%;
+ height: 150px;
 }
 
 .form p{
@@ -353,10 +358,9 @@ figcaption{
 }
 
 #send{
-  font-size: 11px;
-  width: 29%;
-  height: 33px;
+  font-size: 10px;
+  width: 45%;
+  height: 27px;
 
 }
 }
- 
