@@ -1,529 +1,257 @@
-body{
-  font-family: 'Roboto', sans-serif;
-  padding: 0px;
-  margin: 0px;
-}
-
-h2{
-  text-transform: uppercase;
-  font-size: 35px;
-}
-
-p{
-  font-size: 20px;
-  text-align: justify;
-  color: rgb(126,126,126);
-}
-
-.menu{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100px;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  z-index: 10;
-}
-
-/*----------------------TITLE---------------------*/
-
-.title h1{
-  font-weight: bold;
-  color: white;
-  width: 70%;
-}
-
-.title p{
-  color: white;
-  font-size: 15px;
-}
-.color{
-  color: #50b2d5;
-}
-
-.title{
-  margin-left: 90px;
-  position: relative;
-  top: 140px;
-}
-/*-------------------BOUTON PLUS D'INFOS--------------------*/
-#informations{
-  background-color: #50b2d5;
-  color: #ffffff;
-  width: 135px;
-  height: 50px;
-  border-radius: 3px / 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-
-#informations a{
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-#information a:visited{
-  color: white;
-}
-/*---------------------NAV ----------------------*/
-.burger{
-  display: none;
-}
-
-ul{ 
-  display: flex;
-}
-
-nav{
-  display: flex;
-  align-items: center;
-}
-
-nav li{
-  list-style-type: none;
-  color: rgb(126,126,126);
-  padding-right: 10px;
-}
-
-nav a{
-  text-decoration: none;
-  color: #7f7f7f;
-  padding-right: 10px;
-   padding-left: 10px;
-}
-
-nav li:hover{
-  color: rgb(109,109,109);
-}
-
-nav a:hover{
-  border-top: 4px solid #5CADD3;
-  padding-top: 37px;
-
-}
-/*--------------------SLIDER--------------------*/
-#home{
-  background:url(images/slider/bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 755px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-/*-----------------BOUTON PRECEDENT/NEXT------------------*/
-
-#previous_next_button{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: -215px;
-  width: 100%;
-  flex-basis: 100%;
-}
-
-#previous_button a, #next_button a{
-  text-decoration: none;
-  color: white;
-  position: relative;
-}
-
-#previous_button,#next_button{
-  width: 27px;
-  height: 70px;
-  background-color: rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-}
- #previous_button{
-  padding-right: 14px;
-  justify-content: flex-end;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-}
-
-  #next_button{
-    justify-content: flex-start;
-    padding-left: 13px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;  
-}
-
-/*-----------------------SECTION SERVICES-----------------------*/
-/*------------------------TITRE SERVICES------------------------*/
-#services{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 32px;
-  margin-top: -60px;
-}
-
-.service_title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 10px;
-}
-
-.service_title h2{
-  margin-bottom: 5px;
-}
-
-.service_title p{
-  text-align: center;
-  width: 714px;
-}
-
-/*-----------------------SEPARATEUR-----------------------*/
-.space{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.space_bar{
-  background-color: #f0f0f0;
-  width: 120px;
-  height:1px;
-}
-
-.round{
-  background-color: #50b2d5;
-  width: 15px;
-  height: 15px;
-  border-radius: 50px / 50px;
-  border: solid 6px #ffffff;
-}
-
-/*----------------------------PICTURE SERVICES-----------------------*/
-.picture{
-  position: relative;
-  top: 60px;
-  margin-left: 97px;
-  margin-right: 25px;
-  padding: 0px;
-}
-
-/*--------------------------DESCRIPTIONS SERVICES------------------*/
-.benefit{
-  margin-right: 100px;
-  display: flex;
-  width: 100%;
-}
-
-.different_services{
-  margin-top: 100px;
-  width: 58%;
-}
-
-.all_services{
- display: flex;
- justify-content: space-between;
-}
-
-.description_services{
-  width:80%;
-}
-
-.description_services p{
-  width: 88%;
-}
-/*-----------------------------ICONE SERVICES----------------------*/
-.icon_services{
-  width: 70px;
-  height: 70px;
-  color: #50b2d5;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid grey;
-  position: relative;
-  right: -40px;
-  top: 26px;
-}
-
-.icon_services i{
-  font-size: 29px;
-  position: absolute;
-}
-
-.round1{
-  width: 15px;
-  height: 15px;
-  background-color:#50b2d5;
-  border-radius: 50%;
-  border: 4px solid white;
-  position: relative;
-  left: 35px;
-  margin-top: 3px;
-}
-
-/*--------------------------------SECTION PROJETS------------------*/
-#project{
-  background-color: #f5f5f5;
-}
-
-.project_title{
-  font-size: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project_title h2{
-  margin-bottom: 10px;
-}
-
-.image{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-/*-------------------------------TAB-------------------------------*/
-.tab_onglet{
-  display: flex;
-  justify-content: center;
-}
-
-.tab_triangle a{
-  text-decoration: none;
-  color: #787a7e;
-  font-size: 15px;
-}
-
-.tab_triangle p{
-  padding: 14px;
-  background-color: #E5E5E5;
-  margin-left: 8px;
-  margin-right: -8px;
-  font-size: 15px;
-}
-.tab_triangle:hover > p{
-  color: white;
-  background-color:#5cadd3;
-  border-bottom: 3px solid #468cad;
-  padding-bottom: 11px;
-
-}
-
-.tab_triangle:hover > p{
-  opacity: 1;
-}
-
-.tab_triangle:hover > .triangle-code{
-  opacity: 1;
-}
-
-.tab1 {
-border-bottom-left-radius: 5px;
-border-top-left-radius: 5px;
-}
-
-.tab2{
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-/*-----------------------Triangle-----------------*/
-.triangle-code{
- display : inline-block;
- height : 0;
- width : 0;
- border-top : 8px solid #4693b1;
- border-right : 8px solid transparent;
- border-left : 7px solid transparent;
- position: relative;
- top: -22px;
- right: -40px;
- opacity:0;
-}
-
-/*--------------------------FIGURE/FIDCAPTION------------------------*/
-/*--------------------------------IMAGE-----------------------------*/
-figure{
-  margin-left: 50px;
-  margin-right: 0px;
-}
-
-.image_project{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.image1, .image5{
-  margin-left: 30px;
-}
-/*----------------------------LEGENDE--------------------------*/
-
-figcaption {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  background-color: rgba(24,24,24,0.6);
-  color: white;
-  width: 240px;
-  height: 65px;
-  margin-top: -79px;
-  position: absolute;
-  opacity: 0;
-  padding: 5px 5px 5px 5px;
-}
-
-figcaption h3, figcaption p{
-  font-size: 15px;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  color: white;
-  text-align: left;
-}
-
-figure:hover figcaption{
-opacity: 1;
-transition: 1s;
-}
-
-.project_images{
-    width: 250px;
-    height: 175px;
-    position: relative;
-}
-
-/*--------------------------------ICONE FIGCAPTION--------------------*/
-.icon{
-  border: 2px solid white;
-  position: absolute;
-  top: -18px;
-  right: 4px;
-  width: 30px;
-  height: 30px;
-  background-color: #4693b1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.icon i{
-  font-size: 10px;
-}
-.icon p{
-  text-align: center;
-}
-
-/*------------------------------SECTION CONTACT----------------------*/
-#contact{
-  height: 550px;
-  padding: 0px;
-}
-
-/*---------------------------------MAPS-------------------------------*/
-iframe{
-  width: 100%;
-  height: 600px;
-}
-
-.filter{
-  width: 100%;
-  height: 600px;
-  position: absolute;
-  background-color: #5cadd3;
-}
-
-.contact_title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -35px;
-}
-
-.contact_title p{
-  margin-top: -10px;
-}
-
-.maps{
-  position: absolute;
-  opacity: 0.7;
-  position: relative;
-}
-
-/*------------------------------FORMULAIRE----------------------------*/
-.all{
-    background-color:rgba(252, 252, 252,0.7);
-    position: relative;
-    left: 60%;
-    width: 330px;
-    padding-top: 10px;
-    padding-left: 35px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    margin-top: -575px;
-}
-
-.address h2{
-  font-size: 25px;
-  margin-bottom: 6px;
-  text-transform: inherit;
-}
-.address p{
-  margin:2px;
-  font-size: 16px;
-}
-
-.address_size{
-  font-weight: bold;
-}
-
-.form{
-  margin-right: 200px;
-  width: 330px;
-  height: 345px;
-}
-
-#name, #email, #subject{
-  width: 300px;
-  margin-bottom: 10px;
-  border:1px solid #b0b0b0;
-  height: 25px;
-  border-radius: 5px / 5px;
-  font-size:14px;
-  padding-left: 6px;
-}
-
- #commentaire{
-  width: 300px;
-  margin-bottom: 10px;
-  height: 150px;
-  border-radius: 5px / 5px;
-  font-size: 15px;
-  border:1px solid #b0b0b0;
-  padding-left: 6px;
-  padding-top: 6px;
- }
-
-#send{
-  color: white;
-  font-weight: bold;
-  border-bottom: 3px solid #22709e;
-  width: 125px;
-  height: 45px;
-  font-size: 14px;
-  background-color: #50b2d5;
-  border-radius: 5px / 5px;
-}
-
-.dashed{
-  border-bottom: dashed 1px #b0b0b0;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Web Agency</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+		  crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		<link>href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/></style>
+</head>
+<body>
+	<div id="page_block">
+		<header class="main-header">
+			<!--en tete-->
+			<div id="header">
+				<!--Nav + ancre-->
+				<div class="menu">
+		            <div class="logo"><img src="images/logo.png" alt="logo"></div>
+		            <input class="burger" type="checkbox">
+		            <nav>
+		            	<ul>
+			            	<li><a href="#home">Accueil</a></li>
+			                <li><a href="#services">Services</a></li>
+			        		<li><a href="#project">Portfolio</a></li>
+			                <li><a href="#contact">Contact</a></li>
+			            </ul>
+		            </nav>
+		        </div>
+				<!--TITRE-->
+				<div id="home"> 
+					<!--Background image + slider-->
+					<div class="title">
+						<h1><span class="color">WEBAGENCY</span>: L' AGENCE DE TOUS VOS PROJETS !</h1>
+						<p> Vous avez un projet Web ? La Webagency vous aide à le réaliser !</p>
+						<p id="informations"><a href="#contact">Plus d'infos</a></p>
+					</div>
+					<div id="previous_next_button">
+					<div class="button" id="previous_button">
+						<p>
+							<a href="#">&nbsp;&nbsp;&lt;</a>
+						</p>
+					</div>
+					<div class="button" id="next_button" >
+						<p>
+							<a href="#">&gt;&nbsp;&nbsp;</a>
+						</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--SECTION SERVICE-->
+		<section id="services">
+			<div class="service_title">
+				<h2>Nos Services</h2>
+				<div class="space">
+					<div class="space_bar"></div>
+					<div class="round"></div>
+					<div class="space_bar"></div>
+				</div>
+				<p>Webagency vous propose un accompagnement personnalisé pour réaliser tous vos projets : de la conception d'un site web, le design, le développement, le référencement, etc.</p>
+			</div>
+			<div class="benefit">
+				<!--image-->
+				<div class="picture">
+					<img src="images/main-feature.png" alt="ordinateur">
+				</div>
+				<!--les services-->
+				<div class="different_services">
+					<!--image icone UX-->
+					<div class="all_services">
+						<div class="icon_services">
+							<i class="fas fa-chart-line"></i>
+							<div class="round1"></div>
+						</div>
+						<div class="description_services">
+							<h3>UX design</h3>
+							<p>On vous accompagne dans la conception de l'architecture de votre site et de ses fonctionnalités, de la création des wireframes à l'organisation de test des utilisateurs tout en utilisant les dernières tendances numériques.</p>
+						</div>
+					</div>
+					<!--Image icone UI-->
+					<div class="all_services">
+						<div class="icon_services">
+							<i class="fas fa-cubes"></i>
+							<div class="round1"></div>
+						</div>
+						<div class="description_services">
+							<h3>UI design</h3>
+							<p>On intervient dans la création de l'ensemble des maquettes définitives de votre application dans le respect du cahier des charges, des différentes plateformes jusqu'à la création d'un prototype fonctionnel. </p>
+						</div>
+					</div>
+					<!--image icone SEO-->
+					<div class="all_services">
+						<div class="icon_services">
+							<i class="fas fa-chart-pie"></i>
+							<div class="round1"></div>
+						</div>
+						<div class="description_services">
+							<h3>SEO</h3>
+							<p>Nous mettons en place toutes les stratégies nécessaires pour réussir à obtenir un meilleur référencement de votre site web. Et nous vous accompagnerons également dans toutes vos communications numériques afin d'avoir une meilleure notoriété.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--SECTION PROJECT-->
+		<section id="project">
+			<div class="project_title">
+				<h2>Nos projets</h2>
+				<div class="space">
+					<div class="space_bar"></div>
+					<div class="round"></div>
+					<div class="space_bar"></div>
+				</div>
+				<p>Voici quelques exemples des projets réalisés </p>
+			</div>
+			<!--ONGLET TAB-->
+			<div class="tab_onglet">
+				<div class="tab_triangle">
+					<p class="tab1" >All work</p>
+					<div class="triangle-code"></div>
+				</div>
+				<div class="tab_triangle">
+					<p class="onglet_tab">Creative</p>
+					<div class="triangle-code"></div>
+				</div>
+				<div class="tab_triangle">
+					<p class="onglet_tab">Corporate</p>
+					<div class="triangle-code"></div>
+				</div>
+				<div class="tab_triangle">
+					<p class="tab2">Portfolio</p>
+					<div class="triangle-code"></div>
+				</div>
+			</div>
+			<!--IMAGE-->
+			<div class="image">
+				<figure>
+					<img class="project_images" src="images/portfolio/01.jpg" alt="Lunette avec un gros nez">
+					<figcaption>
+						<div class="icon">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Moderne optica</h3>
+						<p>Site optique e-commerce</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/02.jpg" alt="un homme déguisé en lapin">
+					<figcaption>
+						<div class="icon">
+								<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Deguisons nous !</h3>
+						<p>Site de déguisement et de décoration de fêtes</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/03.jpg" alt="logo Pompadour">
+					<figcaption>
+						<div class="icon">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Pompadour Soda</h3>
+						<p>Site de boisson</p>
+					</figcaption>
+				</figure>
+				<figure class="image_area">
+					<img class="project_images" src="images/portfolio/04.jpg" alt="un cahier">
+					<figcaption >
+						<div class="icon">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Graphista Moderna</h3>
+						<p>Site d'agence graphique </p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/05.jpg" alt="2 sacs de Shopping">
+					<figcaption>
+						<div class="icon">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Moderna Shopping</h3>
+						<p>Site de vêtement e-commerce</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/06.jpg" alt="des immeubles">
+					<figcaption>
+						<div class="icon">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Design Moderna</h3>
+						<p>Site de mobilier et décoration</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/07.jpg" alt="logo d'une fusée sortie d'un smartphone">
+					<figcaption>
+						<div class="icon">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Fuse Technology</h3>
+						<p>Logo d'une entreprise mobile</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img class="project_images" src="images/portfolio/08.jpg" alt="fournitures bureautiques">
+					<figcaption>
+						<div class="icon">
+							<i class="fa fa-eye iconeOeil"></i>
+						</div>
+						<h3>Point d'encre</h3>
+						<p>Founiture bureautique et papeterie</p>
+					</figcaption>
+				</figure>
+			 </div>
+		</section>
+		<!--Pied de pages-->
+		<footer>
+			<div id="contact">
+				<!--MAPS-->
+				<div class="maps_form">
+					<div class="maps">
+						<div class="filter"></div>
+						<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680714!2d2.347636915418951!3d48.87305177928902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1558515470302!5m2!1sfr!2sfr"  allowfullscreen></iframe>
+					</div>
+					<div class="all">
+						<div class="address">
+							<h2>Contact Info</h2>
+							<p class="address_size">WebAgency SAS</p>
+							<p>25 Rue d'Hauteville 75010 Paris</p>
+							<p><span class="dashed">Tel :</span> 01.02.03.04.05</p>
+						</div>
+						<div class="form">
+							<form>
+								<p>
+									<input type="text" name="Name" id="name" placeholder="Name"/><br>
+									<input type="email" name="Email" id="email" placeholder="Email"/><br>
+									<input type="text" name="text" id="subject" placeholder="Subject"/><br>
+									<textarea name="commentaire" id ="commentaire" placeholder="Commentaire"></textarea><br>
+									<input type="submit" id="send" value="Send Message">
+								</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
