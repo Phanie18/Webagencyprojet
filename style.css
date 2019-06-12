@@ -156,6 +156,13 @@ nav a:hover{
     border-top-left-radius: 50px;  
 }
 
+.line{
+  width: 12%;
+  height: 4px;
+  position: absolute;
+  top: 649px;
+  background-color: #5CADD3;
+}
 /*-----------------------SECTION SERVICES-----------------------*/
 /*------------------------TITRE SERVICES------------------------*/
 #services{
@@ -288,8 +295,6 @@ nav a:hover{
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
 
 /*-------------------------------TAB-------------------------------*/
 .tab_onglet{
