@@ -50,8 +50,7 @@
     padding-top: 20px;
     z-index: 10;
     height: 80px;
-    width: 95%;
-  }
+    }
 
   .menu .title{
     font-size:30px;
@@ -170,6 +169,10 @@
     height: 150px;
     margin-top: 288px;
     margin-bottom: 49px;
+  }
+
+  .line{
+    top: 434px;
   }
   /*----------------BOUTON PRECEDENT/ NEXT SLIDER ------------*/
   #previous_button, #next_button{
@@ -297,8 +300,6 @@
   figcaption{
     opacity:1;
   }
-
-
   /*-------------------SECTION CONTACT--------------------*/
   .maps, .filter {
     width: 100%;
