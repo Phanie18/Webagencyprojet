@@ -50,6 +50,7 @@
     padding-top: 20px;
     z-index: 10;
     height: 80px;
+    width: 100%;
     }
 
   .menu .title{
@@ -100,8 +101,8 @@
     position:absolute;
     text-align:center;
     top:18px;
-    right:10px;
-    width:50px;
+    right:36px;
+    width:27px;
   }
 
   .menu .burger:before{
@@ -146,8 +147,7 @@
     text-align: center;
     width: 95%;
   }
-
-/*-------------------BOUTON INFORMATION----------*/
+/*----------------------------BOUTON INFORMATION---------------------*/
   #informations{
     width: 34%;
     height: 30px;
@@ -173,8 +173,10 @@
 
   .line{
     top: 434px;
+    width: 18%;
   }
-  /*----------------BOUTON PRECEDENT/ NEXT SLIDER ------------*/
+
+/*----------------BOUTON PRECEDENT/ NEXT SLIDER ------------*/
   #previous_button, #next_button{
     top: 184px;
     height: 35px;
@@ -189,13 +191,15 @@
   #previous_button a{
     left: 7px;
   }
-  /*-------------------------SECTION SERVICE-------------------*/
+
+/*-------------------------SECTION SERVICE-------------------*/
   #services{
     display: block;
     margin-bottom: 27px;
     margin-top: -32px;
   }
-  /*------------------------TITRE SERVICE-----------------------*/
+
+/*------------------------TITRE SERVICE-----------------------*/
   .service_title p{
     width: 82%;
     text-align: center;
@@ -203,7 +207,7 @@
     margin-right: 9px;
   }
 
-  /*------------------------------SEPARATEUR----------------------*/
+/*------------------------------SEPARATEUR----------------------*/
     .space_bar{
       width: 50px;
     }
@@ -212,7 +216,6 @@
     flex-wrap: wrap;
     margin-right: 50px;
   }
-
 
 /*------------------------IMG SERVICE---------------------------*/
   .picture{
@@ -270,7 +273,7 @@
     left: 45%;
   }
 
-/*-----------------------SECTION PROJET----------------*/
+  /*-----------------------SECTION PROJET----------------*/
 /*----------------------------TAB------------------------*/
   .triangle-code{
     top: -18px;
@@ -280,7 +283,6 @@
     font-size: 10px;
   }
 /*---------------------IMAGE PROJET----------------------*/
-
   .image + figcaption{
     display: block;
     text-align: center;
@@ -300,7 +302,8 @@
   figcaption{
     opacity:1;
   }
-  /*-------------------SECTION CONTACT--------------------*/
+
+/*-------------------SECTION CONTACT--------------------*/
   .maps, .filter {
     width: 100%;
   }
@@ -311,8 +314,9 @@
     align-items: center;
     justify-content: center;
   }
-  /*--------------FORMULAIRE-----------------*/
-  /*------------------ADRESSE----------------------*/
+
+/*--------------FORMULAIRE-----------------*/
+/*------------------ADRESSE----------------------*/
   .all{
     position: initial;
     left: -9%;
@@ -362,7 +366,8 @@
 
   #send{
     font-size: 10px;
-    width: 45%;
+    width: 50%;
     height: 27px;
   }
 }
+
