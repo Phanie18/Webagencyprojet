@@ -57,7 +57,7 @@
     font-size:30px;
     font-weight:bold;
     line-height:50px;
-    padding:0 0px;
+    padding:0 20px;
     text-transform:uppercase;
   }
 
@@ -100,10 +100,10 @@
     padding:0;
     position:absolute;
     text-align:center;
-    top:18px;
-    right:36px;
-    width:27px;
-  }
+    top:0;
+    right:10px;
+    width:50px;
+}
 
   .menu .burger:before{
     content:'≡';
