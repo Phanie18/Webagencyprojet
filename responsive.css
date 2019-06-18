@@ -306,6 +306,7 @@
 /*-------------------SECTION CONTACT--------------------*/
   .maps, .filter {
     width: 100%;
+    height: 350px;
   }
 
   .maps{
@@ -313,6 +314,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 350px;
   }
 
 /*--------------FORMULAIRE-----------------*/
