@@ -36,16 +36,18 @@ p{
 
 .title p{
   color: white;
-  font-size: 15px;
+font-size: 22px;
 }
 .color{
   color: #50b2d5;
 }
 
 .title{
-  margin-left: 90px;
+  margin-left: 6%;
   position: relative;
-  top: 140px;
+  top: -450px;
+  width: 55%;
+
 }
 /*-------------------BOUTON PLUS D'INFOS--------------------*/
 #informations{
@@ -57,6 +59,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 4px solid #468cad;
   }
 
 #informations a{
@@ -92,7 +95,7 @@ nav a{
   text-decoration: none;
   color: #7f7f7f;
   padding-right: 10px;
-   padding-left: 10px;
+  padding-left: 10px;
 }
 
 nav li:hover{
@@ -105,10 +108,16 @@ nav a:hover{
 
 }
 /*--------------------SLIDER--------------------*/
+#slider_part{
+  width: 100%;
+  position: absolute;
+  top: 100px;
+}
+
+#slider{
+  width: 100%;
+}
 #home{
-  background:url(images/slider/bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
   height: 755px;
   display: flex;
@@ -116,7 +125,6 @@ nav a:hover{
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-
 /*-----------------BOUTON PRECEDENT/NEXT------------------*/
 
 #previous_next_button{
@@ -124,7 +132,7 @@ nav a:hover{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: -215px;
+  top: -260px;
   width: 100%;
   flex-basis: 100%;
 }
@@ -157,10 +165,10 @@ nav a:hover{
 }
 
 .line{
-  width: 12%;
+  width: 17%;
   height: 4px;
-  position: absolute;
-  top: 649px;
+  position: relative;
+  top: -78px;
   background-color: #5CADD3;
 }
 /*-----------------------SECTION SERVICES-----------------------*/
