@@ -315,9 +315,9 @@
 /*--------------FORMULAIRE-----------------*/
 /*------------------ADRESSE----------------------*/
   .all{
-    position: initial;
-    left: -9%;
-    margin-top: -5px;
+    position: absolute;
+    left: 5%;
+    margin-top: 5px;
     height: 360px;
     width: 63%;
     padding: 0;
