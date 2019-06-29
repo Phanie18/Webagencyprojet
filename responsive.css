@@ -1,5 +1,5 @@
 /*-------------------------MEDIA QUERIES------------------------*/
-@media screen and (max-width: 1020px) { 
+@media screen and (max-width: 1045px) { 
   body{
     background:#fff;
     margin:0;
@@ -191,7 +191,7 @@
   #services{
     display: block;
     margin-bottom: 27px;
-    margin-top: 4%;
+    margin-top: 11%;
   }
 
 /*------------------------TITRE SERVICE-----------------------*/
